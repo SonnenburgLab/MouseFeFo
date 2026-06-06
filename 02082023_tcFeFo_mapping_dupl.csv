@@ -1,0 +1,276 @@
+Sample_name,Category,Type,Ferment,Label,Stage,Timepoint_h,Timepoint_d,Order
+Amasi_starter_T0_trip1,Dairy,Starter,Amasi,Amasi,0,0,0,NA
+Amasi_starter_T0_trip2,Dairy,Starter,Amasi,Amasi,0,0,0,NA
+Amasi_starter_T0_trip3,Dairy,Starter,Amasi,Amasi,0,0,0,NA
+Amasi_CM_T0_trip1,Dairy,Milk,Amasi,Amasi,1,0,0,I
+Amasi_CM_T0_trip2,Dairy,Milk,Amasi,Amasi,1,0,0,I
+Amasi_CM_T0_trip3,Dairy,Milk,Amasi,Amasi,1,0,0,I
+Amasi_F_T12_trip1,Dairy,Ferment,Amasi,Amasi,2,12,0.5,NA
+Amasi_F_T12_trip2,Dairy,Ferment,Amasi,Amasi,2,12,0.5,NA
+Amasi_F_T12_trip3,Dairy,Ferment,Amasi,Amasi,2,12,0.5,NA
+Amasi_F_T24_trip1,Dairy,Ferment,Amasi,Amasi,3,24,1,F
+Amasi_F_T24_trip2,Dairy,Ferment,Amasi,Amasi,3,24,1,F
+Amasi_F_T24_trip3,Dairy,Ferment,Amasi,Amasi,3,24,1,F
+Kimchi_ImStarter_T0_trip2,Vegetable,Starter,Kimchi,Baechu Kimchi (S),0,0,0,NA
+Kimchi_ImStarter_T0_trip3,Vegetable,Starter,Kimchi,Baechu Kimchi (S),0,0,0,NA
+Kimchi_ImVegStarter_T0_trip1,Vegetable,Starter,Kimchi,Baechu Kimchi (VS),0,0,0,NA
+Kimchi_ImVegStarter_T0_trip2,Vegetable,Starter,Kimchi,Baechu Kimchi (VS),0,0,0,NA
+Kimchi_ImVegStarter_T0_trip3,Vegetable,Starter,Kimchi,Baechu Kimchi (VS),0,0,0,NA
+Kimchi_BKNS_T0_trip1,Vegetable,Cabbage,Kimchi,Baechu Kimchi (wNS),1,0,0,I
+Kimchi_BKNS_T0_trip2,Vegetable,Cabbage,Kimchi,Baechu Kimchi (wNS),1,0,0,I
+Kimchi_BKNS_T0_trip3,Vegetable,Cabbage,Kimchi,Baechu Kimchi (wNS),1,0,0,I
+Kimchi_BKNS_T96_trip1,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNS),2,96,4,NA
+Kimchi_BKNS_T96_trip2,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNS),2,96,4,NA
+Kimchi_BKNS_T96_trip3,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNS),2,96,4,NA
+Kimchi_BKNS_T14_trip1,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNS),3,336,14,NA
+Kimchi_BKNS_T14_trip2,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNS),3,336,14,NA
+Kimchi_BKNS_T14_trip3,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNS),3,336,14,NA
+Kimchi_BKNS_T60_trip1,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNS),4,1440,60,F
+Kimchi_BKNS_T60_trip2,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNS),4,1440,60,F
+Kimchi_BKNS_T60_trip3,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNS),4,1440,60,F
+Kimchi_BKNVS_T0_trip1,Vegetable,Cabbage,Kimchi,Baechu Kimchi (wNVS),1,0,0,I
+Kimchi_BKNVS_T0_trip2,Vegetable,Cabbage,Kimchi,Baechu Kimchi (wNVS),1,0,0,I
+Kimchi_BKNVS_T0_trip3,Vegetable,Cabbage,Kimchi,Baechu Kimchi (wNVS),1,0,0,I
+Kimchi_BKNVS_T96_trip1,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNVS),2,96,4,NA
+Kimchi_BKNVS_T96_trip2,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNVS),2,96,4,NA
+Kimchi_BKNVS_T96_trip3,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNVS),2,96,4,NA
+Kimchi_BKNVS_T14_trip1,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNVS),3,336,14,NA
+Kimchi_BKNVS_T14_trip2,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNVS),3,336,14,NA
+Kimchi_BKNVS_T14_trip3,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNVS),3,336,14,NA
+Kimchi_BKNVS_T60_trip1,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNVS),4,1440,60,F
+Kimchi_BKNVS_T60_trip2,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNVS),4,1440,60,F
+Kimchi_BKNVS_T60_trip3,Vegetable,Ferment,Kimchi,Baechu Kimchi (wNVS),4,1440,60,F
+Kimchi_BKS_T0_trip1,Vegetable,Cabbage,Kimchi,Baechu Kimchi (wS),1,0,0,I
+Kimchi_BKS_T0_trip2,Vegetable,Cabbage,Kimchi,Baechu Kimchi (wS),1,0,0,I
+Kimchi_BKS_T0_trip3,Vegetable,Cabbage,Kimchi,Baechu Kimchi (wS),1,0,0,I
+Kimchi_BKS_T96_trip1,Vegetable,Ferment,Kimchi,Baechu Kimchi (wS),2,96,4,NA
+Kimchi_BKS_T96_trip2,Vegetable,Ferment,Kimchi,Baechu Kimchi (wS),2,96,4,NA
+Kimchi_BKS_T96_trip3,Vegetable,Ferment,Kimchi,Baechu Kimchi (wS),2,96,4,NA
+Kimchi_BKS_T14_trip1,Vegetable,Ferment,Kimchi,Baechu Kimchi (wS),3,336,14,NA
+Kimchi_BKS_T14_trip2,Vegetable,Ferment,Kimchi,Baechu Kimchi (wS),3,336,14,NA
+Kimchi_BKS_T14_trip3,Vegetable,Ferment,Kimchi,Baechu Kimchi (wS),3,336,14,NA
+Kimchi_BKS_T60_trip1,Vegetable,Ferment,Kimchi,Baechu Kimchi (wS),4,1440,60,F
+Kimchi_BKS_T60_trip2,Vegetable,Ferment,Kimchi,Baechu Kimchi (wS),4,1440,60,F
+Kimchi_BKS_T60_trip3,Vegetable,Ferment,Kimchi,Baechu Kimchi (wS),4,1440,60,F
+Kimchi_BKVS_T0_trip1,Vegetable,Cabbage,Kimchi,Baechu Kimchi (wVS),1,0,0,I
+Kimchi_BKVS_T0_trip2,Vegetable,Cabbage,Kimchi,Baechu Kimchi (wVS),1,0,0,I
+Kimchi_BKVS_T0_trip3,Vegetable,Cabbage,Kimchi,Baechu Kimchi (wVS),1,0,0,I
+Kimchi_BKVS_T96_trip1,Vegetable,Ferment,Kimchi,Baechu Kimchi (wVS),2,96,4,NA
+Kimchi_BKVS_T96_trip2,Vegetable,Ferment,Kimchi,Baechu Kimchi (wVS),2,96,4,NA
+Kimchi_BKVS_T96_trip3,Vegetable,Ferment,Kimchi,Baechu Kimchi (wVS),2,96,4,NA
+Kimchi_BKVS_T14_trip1,Vegetable,Ferment,Kimchi,Baechu Kimchi (wVS),3,336,14,NA
+Kimchi_BKVS_T14_trip2,Vegetable,Ferment,Kimchi,Baechu Kimchi (wVS),3,336,14,NA
+Kimchi_BKVS_T14_trip3,Vegetable,Ferment,Kimchi,Baechu Kimchi (wVS),3,336,14,NA
+Kimchi_BKVS_T60_trip1,Vegetable,Ferment,Kimchi,Baechu Kimchi (wVS),4,1440,60,F
+Kimchi_BKVS_T60_trip2,Vegetable,Ferment,Kimchi,Baechu Kimchi (wVS),4,1440,60,F
+Kimchi_BKVS_T60_trip3,Vegetable,Ferment,Kimchi,Baechu Kimchi (wVS),4,1440,60,F
+Blank_01,Blank,Blank,Blank,Blank_01,0,Blank,Blank,NA
+Blank_02,Blank,Blank,Blank,Blank_02,0,Blank,Blank,NA
+Blank_03,Blank,Blank,Blank,Blank_03,0,Blank,Blank,NA
+Blank_04,Blank,Blank,Blank,Blank_04,0,Blank,Blank,NA
+Blank_05,Blank,Blank,Blank,Blank_05,0,Blank,Blank,NA
+Blank_06,Blank,Blank,Blank,Blank_06,0,Blank,Blank,NA
+Blank_07,Blank,Blank,Blank,Blank_07,0,Blank,Blank,NA
+Blank_08,Blank,Blank,Blank,Blank_08,0,Blank,Blank,NA
+Blank_09,Blank,Blank,Blank,Blank_09,0,Blank,Blank,NA
+Blank_10,Blank,Blank,Blank,Blank_10,0,Blank,Blank,NA
+Blank_11,Blank,Blank,Blank,Blank_11,0,Blank,Blank,NA
+Blank_12,Blank,Blank,Blank,Blank_12,0,Blank,Blank,NA
+Blank_13,Blank,Blank,Blank,Blank_13,0,Blank,Blank,NA
+Blank_14,Blank,Blank,Blank,Blank_14,0,Blank,Blank,NA
+Blank_15,Blank,Blank,Blank,Blank_15,0,Blank,Blank,NA
+Blank_16,Blank,Blank,Blank,Blank_16,0,Blank,Blank,NA
+Blank_17,Blank,Blank,Blank,Blank_17,0,Blank,Blank,NA
+Blank_18,Blank,Blank,Blank,Blank_18,0,Blank,Blank,NA
+Blank_19,Blank,Blank,Blank,Blank_19,0,Blank,Blank,NA
+Blank_20,Blank,Blank,Blank,Blank_20,0,Blank,Blank,NA
+Blank_21,Blank,Blank,Blank,Blank_21,0,Blank,Blank,NA
+Blank_22,Blank,Blank,Blank,Blank_22,0,Blank,Blank,NA
+Blank_23,Blank,Blank,Blank,Blank_23,0,Blank,Blank,NA
+Blank_24,Blank,Blank,Blank,Blank_24,0,Blank,Blank,NA
+Blank_25,Blank,Blank,Blank,Blank_25,0,Blank,Blank,NA
+Blank_26,Blank,Blank,Blank,Blank_26,0,Blank,Blank,NA
+Blank_27,Blank,Blank,Blank,Blank_27,0,Blank,Blank,NA
+Blank_28,Blank,Blank,Blank,Blank_28,0,Blank,Blank,NA
+Blank_29,Blank,Blank,Blank,Blank_29,0,Blank,Blank,NA
+Blank_30,Blank,Blank,Blank,Blank_30,0,Blank,Blank,NA
+Blank_31,Blank,Blank,Blank,Blank_31,0,Blank,Blank,NA
+Blank_32,Blank,Blank,Blank,Blank_32,0,Blank,Blank,NA
+Blank_33,Blank,Blank,Blank,Blank_33,0,Blank,Blank,NA
+Blank_34,Blank,Blank,Blank,Blank_34,0,Blank,Blank,NA
+Kefir_CM_T0_trip1,Dairy,Milk,Kefir,Cow Kefir,1,0,0,I
+Kefir_CM_T0_trip2,Dairy,Milk,Kefir,Cow Kefir,1,0,0,I
+Kefir_CM_T0_trip3,Dairy,Milk,Kefir,Cow Kefir,1,0,0,I
+Kefir_CK_T30_trip1,Dairy,Ferment,Kefir,Cow Kefir,2,30,1.25,NA
+Kefir_CK_T30_trip2,Dairy,Ferment,Kefir,Cow Kefir,2,30,1.25,NA
+Kefir_CK_T30_trip3,Dairy,Ferment,Kefir,Cow Kefir,2,30,1.25,NA
+Kefir_CK_T48_trip1,Dairy,Ferment,Kefir,Cow Kefir,3,48,2,F
+Kefir_CK_T48_trip2,Dairy,Ferment,Kefir,Cow Kefir,3,48,2,F
+Kefir_CK_T48_trip3,Dairy,Ferment,Kefir,Cow Kefir,3,48,2,F
+Curtido_F_T0_trip1,Vegetable,Cabbage,Curtido,Curtido,1,0,0,I
+Curtido_F_T0_trip2,Vegetable,Cabbage,Curtido,Curtido,1,0,0,I
+Curtido_F_T0_trip3,Vegetable,Cabbage,Curtido,Curtido,1,0,0,I
+Curtido_F_T96_trip1,Vegetable,Ferment,Curtido,Curtido,2,96,4,NA
+Curtido_F_T96_trip2,Vegetable,Ferment,Curtido,Curtido,2,96,4,NA
+Curtido_F_T96_trip3,Vegetable,Ferment,Curtido,Curtido,2,96,4,NA
+Curtido_F_T7_trip1,Vegetable,Ferment,Curtido,Curtido,3,168,7,F
+Curtido_F_T7_trip2,Vegetable,Ferment,Curtido,Curtido,3,168,7,F
+Curtido_F_T7_trip3,Vegetable,Ferment,Curtido,Curtido,3,168,7,F
+Filmjolk_starter_T0_trip1,Dairy,Starter,Filmjolk,Filmjolk,0,0,0,NA
+Filmjolk_starter_T0_trip2,Dairy,Starter,Filmjolk,Filmjolk,0,0,0,NA
+Filmjolk_starter_T0_trip3,Dairy,Starter,Filmjolk,Filmjolk,0,0,0,NA
+Filmjolk_CM_T0_trip1,Dairy,Milk,Filmjolk,Filmjolk,1,0,0,I
+Filmjolk_CM_T0_trip2,Dairy,Milk,Filmjolk,Filmjolk,1,0,0,I
+Filmjolk_CM_T0_trip3,Dairy,Milk,Filmjolk,Filmjolk,1,0,0,I
+Filmjolk_F_T12_trip1,Dairy,Ferment,Filmjolk,Filmjolk,2,12,0.5,NA
+Filmjolk_F_T12_trip2,Dairy,Ferment,Filmjolk,Filmjolk,2,12,0.5,NA
+Filmjolk_F_T12_trip3,Dairy,Ferment,Filmjolk,Filmjolk,2,12,0.5,NA
+Filmjolk_F_T24_trip1,Dairy,Ferment,Filmjolk,Filmjolk,3,24,1,F
+Filmjolk_F_T24_trip2,Dairy,Ferment,Filmjolk,Filmjolk,3,24,1,F
+Filmjolk_F_T24_trip3,Dairy,Ferment,Filmjolk,Filmjolk,3,24,1,F
+Kefir_GM_T0_trip1,Dairy,Milk,Kefir,Goat Kefir,1,0,0,I
+Kefir_GM_T0_trip2,Dairy,Milk,Kefir,Goat Kefir,1,0,0,I
+Kefir_GM_T0_trip3,Dairy,Milk,Kefir,Goat Kefir,1,0,0,I
+Kefir_GK_T30_trip1,Dairy,Ferment,Kefir,Goat Kefir,2,30,1.25,NA
+Kefir_GK_T30_trip2,Dairy,Ferment,Kefir,Goat Kefir,2,30,1.25,NA
+Kefir_GK_T30_trip3,Dairy,Ferment,Kefir,Goat Kefir,2,30,1.25,NA
+Kefir_GK_T56_trip2,Dairy,Ferment,Kefir,Goat Kefir,3,48,2,F
+Kefir_GK_T56_trip3,Dairy,Ferment,Kefir,Goat Kefir,3,48,2,F
+Sauerkraut_WS_T0_trip1,Vegetable,Cabbage,Sauerkraut,Green Sauerkraut (wNS),1,0,0,I
+Sauerkraut_WS_T0_trip2,Vegetable,Cabbage,Sauerkraut,Green Sauerkraut (wNS),1,0,0,I
+Sauerkraut_WS_T0_trip3,Vegetable,Cabbage,Sauerkraut,Green Sauerkraut (wNS),1,0,0,I
+Sauerkraut_WS_T96_trip1,Vegetable,Ferment,Sauerkraut,Green Sauerkraut (wNS),2,96,4,NA
+Sauerkraut_WS_T96_trip2,Vegetable,Ferment,Sauerkraut,Green Sauerkraut (wNS),2,96,4,NA
+Sauerkraut_WS_T96_trip3,Vegetable,Ferment,Sauerkraut,Green Sauerkraut (wNS),2,96,4,NA
+Sauerkraut_WS_T21_trip1,Vegetable,Ferment,Sauerkraut,Green Sauerkraut (wNS),3,504,21,F
+Sauerkraut_WS_T21_trip2,Vegetable,Ferment,Sauerkraut,Green Sauerkraut (wNS),3,504,21,F
+Sauerkraut_WS_T21_trip3,Vegetable,Ferment,Sauerkraut,Green Sauerkraut (wNS),3,504,21,F
+Sauerkraut_starter_T0_trip1,Vegetable,Starter,Sauerkraut,Green Sauerkraut (wS),0,0,0,NA
+Sauerkraut_starter_T0_trip2,Vegetable,Starter,Sauerkraut,Green Sauerkraut (wS),0,0,0,NA
+Sauerkraut_starter_T0_trip3,Vegetable,Starter,Sauerkraut,Green Sauerkraut (wS),0,0,0,NA
+Sauerkraut_WS_T0_trip1,Vegetable,Cabbage,Sauerkraut,Green Sauerkraut (wS),1,0,0,I
+Sauerkraut_WS_T0_trip2,Vegetable,Cabbage,Sauerkraut,Green Sauerkraut (wS),1,0,0,I
+Sauerkraut_WS_T0_trip3,Vegetable,Cabbage,Sauerkraut,Green Sauerkraut (wS),1,0,0,I
+Sauerkraut_SS_T96_trip1,Vegetable,Ferment,Sauerkraut,Green Sauerkraut (wS),2,96,4,NA
+Sauerkraut_SS_T96_trip2,Vegetable,Ferment,Sauerkraut,Green Sauerkraut (wS),2,96,4,NA
+Sauerkraut_SS_T96_trip3,Vegetable,Ferment,Sauerkraut,Green Sauerkraut (wS),2,96,4,NA
+Sauerkraut_SS_T21_trip1,Vegetable,Ferment,Sauerkraut,Green Sauerkraut (wS),3,504,21,F
+Sauerkraut_SS_T21_trip2,Vegetable,Ferment,Sauerkraut,Green Sauerkraut (wS),3,504,21,F
+Sauerkraut_SS_T21_trip3,Vegetable,Ferment,Sauerkraut,Green Sauerkraut (wS),3,504,21,F
+IS_01,IS,IS,IS,IS_01,0,IS,IS,NA
+IS_02,IS,IS,IS,IS_02,0,IS,IS,NA
+IS_03,IS,IS,IS,IS_03,0,IS,IS,NA
+IS_04,IS,IS,IS,IS_04,0,IS,IS,NA
+Viili_LVstarter_T0_trip1,Dairy,Starter,Viili,Long Viili,0,0,0,NA
+Viili_LVstarter_T0_trip2,Dairy,Starter,Viili,Long Viili,0,0,0,NA
+Viili_LVstarter_T0_trip3,Dairy,Starter,Viili,Long Viili,0,0,0,NA
+Viili_CM_T0_trip1,Dairy,Milk,Viili,Long Viili,1,0,0,I
+Viili_CM_T0_trip2,Dairy,Milk,Viili,Long Viili,1,0,0,I
+Viili_CM_T0_trip3,Dairy,Milk,Viili,Long Viili,1,0,0,I
+Viili_LV_T12_trip1,Dairy,Ferment,Viili,Long Viili,2,12,0.5,NA
+Viili_LV_T12_trip2,Dairy,Ferment,Viili,Long Viili,2,12,0.5,NA
+Viili_LV_T12_trip3,Dairy,Ferment,Viili,Long Viili,2,12,0.5,NA
+Viili_LV_T24_trip1,Dairy,Ferment,Viili,Long Viili,3,24,1,F
+Viili_LV_T24_trip2,Dairy,Ferment,Viili,Long Viili,3,24,1,F
+Viili_LV_T24_trip3,Dairy,Ferment,Viili,Long Viili,3,24,1,F
+Kimchi_NKstarter_T0_trip1,Vegetable,Starter,Kimchi,Nabak Kimchi (S),0,0,0,NA
+Kimchi_NKstarter_T0_trip2,Vegetable,Starter,Kimchi,Nabak Kimchi (S),0,0,0,NA
+Kimchi_NKstarter_T0_trip3,Vegetable,Starter,Kimchi,Nabak Kimchi (S),0,0,0,NA
+Kimchi_NKNS_T0_trip1,Vegetable,Cabbage,Kimchi,Nabak Kimchi (wNS),1,0,0,I
+Kimchi_NKNS_T0_trip2,Vegetable,Cabbage,Kimchi,Nabak Kimchi (wNS),1,0,0,I
+Kimchi_NKNS_T0_trip3,Vegetable,Cabbage,Kimchi,Nabak Kimchi (wNS),1,0,0,I
+Kimchi_NKNS_T7_trip1,Vegetable,Ferment,Kimchi,Nabak Kimchi (wNS),2,168,7,NA
+Kimchi_NKNS_T7_trip2,Vegetable,Ferment,Kimchi,Nabak Kimchi (wNS),2,168,7,NA
+Kimchi_NKNS_T7_trip3,Vegetable,Ferment,Kimchi,Nabak Kimchi (wNS),2,168,7,NA
+Kimchi_NKNS_T14_trip1,Vegetable,Ferment,Kimchi,Nabak Kimchi (wNS),3,336,14,NA
+Kimchi_NKNS_T14_trip2,Vegetable,Ferment,Kimchi,Nabak Kimchi (wNS),3,336,14,NA
+Kimchi_NKNS_T14_trip3,Vegetable,Ferment,Kimchi,Nabak Kimchi (wNS),3,336,14,NA
+Kimchi_NKNS_T60_trip1,Vegetable,Ferment,Kimchi,Nabak Kimchi (wNS),4,1440,60,F
+Kimchi_NKNS_T60_trip2,Vegetable,Ferment,Kimchi,Nabak Kimchi (wNS),4,1440,60,F
+Kimchi_NKNS_T60_trip3,Vegetable,Ferment,Kimchi,Nabak Kimchi (wNS),4,1440,60,F
+Kimchi_NKS_T0_trip1,Vegetable,Cabbage,Kimchi,Nabak Kimchi (wS),1,0,0,I
+Kimchi_NKS_T0_trip2,Vegetable,Cabbage,Kimchi,Nabak Kimchi (wS),1,0,0,I
+Kimchi_NKS_T0_trip3,Vegetable,Cabbage,Kimchi,Nabak Kimchi (wS),1,0,0,I
+Kimchi_NKS_T7_trip1,Vegetable,Ferment,Kimchi,Nabak Kimchi (wS),2,168,7,NA
+Kimchi_NKS_T7_trip2,Vegetable,Ferment,Kimchi,Nabak Kimchi (wS),2,168,7,NA
+Kimchi_NKS_T7_trip3,Vegetable,Ferment,Kimchi,Nabak Kimchi (wS),2,168,7,NA
+Kimchi_NKS_T14_trip1,Vegetable,Ferment,Kimchi,Nabak Kimchi (wS),3,336,14,NA
+Kimchi_NKS_T14_trip2,Vegetable,Ferment,Kimchi,Nabak Kimchi (wS),3,336,14,NA
+Kimchi_NKS_T14_trip3,Vegetable,Ferment,Kimchi,Nabak Kimchi (wS),3,336,14,NA
+Kimchi_NKS_T60_trip1,Vegetable,Ferment,Kimchi,Nabak Kimchi (wS),4,1440,60,F
+Kimchi_NKS_T60_trip2,Vegetable,Ferment,Kimchi,Nabak Kimchi (wS),4,1440,60,F
+Kimchi_NKS_T60_trip3,Vegetable,Ferment,Kimchi,Nabak Kimchi (wS),4,1440,60,F
+QC_01,QC,QC,QC,QC_01,0,0,0,NA
+QC_02,QC,QC,QC,QC_02,0,0,0,NA
+Kefir_RCM_T0_trip1,Dairy,Milk,Kefir,Raw Cow Kefir,1,0,0,I
+Kefir_RCM_T0_trip2,Dairy,Milk,Kefir,Raw Cow Kefir,1,0,0,I
+Kefir_RCM_T0_trip3,Dairy,Milk,Kefir,Raw Cow Kefir,1,0,0,I
+Kefir_RCK_T30_trip1,Dairy,Ferment,Kefir,Raw Cow Kefir,2,30,1.25,NA
+Kefir_RCK_T30_trip2,Dairy,Ferment,Kefir,Raw Cow Kefir,2,30,1.25,NA
+Kefir_RCK_T30_trip3,Dairy,Ferment,Kefir,Raw Cow Kefir,2,30,1.25,NA
+Kefir_RCK_T48_trip1,Dairy,Ferment,Kefir,Raw Cow Kefir,3,48,2,F
+Kefir_RCK_T48_trip2,Dairy,Ferment,Kefir,Raw Cow Kefir,3,48,2,F
+Kefir_RCK_T48_trip3,Dairy,Ferment,Kefir,Raw Cow Kefir,3,48,2,F
+Sauerkraut_RS_T0_trip1,Vegetable,Cabbage,Sauerkraut,Red Sauerkraut,1,0,0,I
+Sauerkraut_RS_T0_trip2,Vegetable,Cabbage,Sauerkraut,Red Sauerkraut,1,0,0,I
+Sauerkraut_RS_T0_trip3,Vegetable,Cabbage,Sauerkraut,Red Sauerkraut,1,0,0,I
+Sauerkraut_RS_T96_trip1,Vegetable,Ferment,Sauerkraut,Red Sauerkraut,2,96,4,NA
+Sauerkraut_RS_T96_trip2,Vegetable,Ferment,Sauerkraut,Red Sauerkraut,2,96,4,NA
+Sauerkraut_RS_T96_trip3,Vegetable,Ferment,Sauerkraut,Red Sauerkraut,2,96,4,NA
+Sauerkraut_RS_T21_trip1,Vegetable,Ferment,Sauerkraut,Red Sauerkraut,3,504,21,F
+Sauerkraut_RS_T21_trip2,Vegetable,Ferment,Sauerkraut,Red Sauerkraut,3,504,21,F
+Sauerkraut_RS_T21_trip3,Vegetable,Ferment,Sauerkraut,Red Sauerkraut,3,504,21,F
+Viili_SVstarter_T0_trip1,Dairy,Starter,Viili,Short Viili,0,0,0,NA
+Viili_SVstarter_T0_trip2,Dairy,Starter,Viili,Short Viili,0,0,0,NA
+Viili_SVstarter_T0_trip3,Dairy,Starter,Viili,Short Viili,0,0,0,NA
+Viili_CM_T0_trip1,Dairy,Milk,Viili,Short Viili,1,0,0,I
+Viili_CM_T0_trip2,Dairy,Milk,Viili,Short Viili,1,0,0,I
+Viili_CM_T0_trip3,Dairy,Milk,Viili,Short Viili,1,0,0,I
+Viili_SV_T12_trip1,Dairy,Ferment,Viili,Short Viili,2,12,0.5,NA
+Viili_SV_T12_trip2,Dairy,Ferment,Viili,Short Viili,2,12,0.5,NA
+Viili_SV_T12_trip3,Dairy,Ferment,Viili,Short Viili,2,12,0.5,NA
+Viili_SV_T24_trip1,Dairy,Ferment,Viili,Short Viili,3,24,1,F
+Viili_SV_T24_trip2,Dairy,Ferment,Viili,Short Viili,3,24,1,F
+Viili_SV_T24_trip3,Dairy,Ferment,Viili,Short Viili,3,24,1,F
+Yogurt_SSYstarter_T0_trip1,Dairy,Starter,Yogurt,Yogurt (SSY),0,0,0,NA
+Yogurt_SSYstarter_T0_trip2,Dairy,Starter,Yogurt,Yogurt (SSY),0,0,0,NA
+Yogurt_SSYstarter_T0_trip3,Dairy,Starter,Yogurt,Yogurt (SSY),0,0,0,NA
+Yogurt_PCM_T0_trip1,Dairy,Milk,Yogurt,Yogurt (SSYP),1,0,0,I
+Yogurt_PCM_T0_trip2,Dairy,Milk,Yogurt,Yogurt (SSYP),1,0,0,I
+Yogurt_PCM_T0_trip3,Dairy,Milk,Yogurt,Yogurt (SSYP),1,0,0,I
+Yogurt_SSYP_T24_trip1,Dairy,Ferment,Yogurt,Yogurt (SSYP),2,24,1,F
+Yogurt_SSYP_T24_trip2,Dairy,Ferment,Yogurt,Yogurt (SSYP),2,24,1,F
+Yogurt_SSYP_T24_trip3,Dairy,Ferment,Yogurt,Yogurt (SSYP),2,24,1,F
+Yogurt_SSYP_T6_trip1,Dairy,Ferment,Yogurt,Yogurt (SSYP),3,6,0.25,NA
+Yogurt_SSYP_T6_trip2,Dairy,Ferment,Yogurt,Yogurt (SSYP),3,6,0.25,NA
+Yogurt_SSYP_T6_trip3,Dairy,Ferment,Yogurt,Yogurt (SSYP),3,6,0.25,NA
+Yogurt_RCM_T0_trip1,Dairy,Milk,Yogurt,Yogurt (SSYR),1,0,0,I
+Yogurt_RCM_T0_trip2,Dairy,Milk,Yogurt,Yogurt (SSYR),1,0,0,I
+Yogurt_RCM_T0_trip3,Dairy,Milk,Yogurt,Yogurt (SSYR),1,0,0,I
+Yogurt_SSYR_T24_trip1,Dairy,Ferment,Yogurt,Yogurt (SSYR),2,24,1,F
+Yogurt_SSYR_T24_trip2,Dairy,Ferment,Yogurt,Yogurt (SSYR),2,24,1,F
+Yogurt_SSYR_T24_trip3,Dairy,Ferment,Yogurt,Yogurt (SSYR),2,24,1,F
+Yogurt_SSYR_T6_trip1,Dairy,Ferment,Yogurt,Yogurt (SSYR),3,6,0.25,NA
+Yogurt_SSYR_T6_trip2,Dairy,Ferment,Yogurt,Yogurt (SSYR),3,6,0.25,NA
+Yogurt_SSYR_T6_trip3,Dairy,Ferment,Yogurt,Yogurt (SSYR),3,6,0.25,NA
+Yogurt_PCM_T0_trip1,Dairy,Milk,Yogurt,Yogurt (YSP),1,0,0,I
+Yogurt_PCM_T0_trip2,Dairy,Milk,Yogurt,Yogurt (YSP),1,0,0,I
+Yogurt_PCM_T0_trip3,Dairy,Milk,Yogurt,Yogurt (YSP),1,0,0,I
+Yogurt_YSP_T6_trip1,Dairy,Ferment,Yogurt,Yogurt (YSP),2,6,0.25,NA
+Yogurt_YSP_T6_trip2,Dairy,Ferment,Yogurt,Yogurt (YSP),2,6,0.25,NA
+Yogurt_YSP_T6_trip3,Dairy,Ferment,Yogurt,Yogurt (YSP),2,6,0.25,NA
+Yogurt_YSP_T24_trip1,Dairy,Ferment,Yogurt,Yogurt (YSP),3,24,1,F
+Yogurt_YSP_T24_trip2,Dairy,Ferment,Yogurt,Yogurt (YSP),3,24,1,F
+Yogurt_YSP_T24_trip3,Dairy,Ferment,Yogurt,Yogurt (YSP),3,24,1,F
+Yogurt_RCM_T0_trip1,Dairy,Milk,Yogurt,Yogurt (YSR),1,0,0,I
+Yogurt_RCM_T0_trip2,Dairy,Milk,Yogurt,Yogurt (YSR),1,0,0,I
+Yogurt_RCM_T0_trip3,Dairy,Milk,Yogurt,Yogurt (YSR),1,0,0,I
+Yogurt_YSR_T6_trip1,Dairy,Ferment,Yogurt,Yogurt (YSR),2,6,0.25,NA
+Yogurt_YSR_T6_trip2,Dairy,Ferment,Yogurt,Yogurt (YSR),2,6,0.25,NA
+Yogurt_YSR_T6_trip3,Dairy,Ferment,Yogurt,Yogurt (YSR),2,6,0.25,NA
+Yogurt_YSR_T24_trip1,Dairy,Ferment,Yogurt,Yogurt (YSR),3,24,1,F
+Yogurt_YSR_T24_trip2,Dairy,Ferment,Yogurt,Yogurt (YSR),3,24,1,F
+Yogurt_YSR_T24_trip3,Dairy,Ferment,Yogurt,Yogurt (YSR),3,24,1,F
+Yogurt_YSstarter_T0_trip1,Dairy,Starter,Yogurt,Yogurt (YSS),0,0,0,NA
+Yogurt_YSstarter_T0_trip2,Dairy,Starter,Yogurt,Yogurt (YSS),0,0,0,NA
+Yogurt_YSstarter_T0_trip3,Dairy,Starter,Yogurt,Yogurt (YSS),0,0,0,NA

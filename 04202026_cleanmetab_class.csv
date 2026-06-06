@@ -1,0 +1,639 @@
+"Metabolite","Superclass","Class"
+"DIMETHYL SULFOXIDE","Organosulfur compounds","Sulfoxides"
+"2-HYDROXYPYRIDINE","Organoheterocyclic compounds","Pyridines and derivatives"
+"1-AMINOCYCLOPROPANE-1-CARBOXYLIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"2-PIPERIDONE","Organoheterocyclic compounds","Piperidines"
+"2-AMINOBUTYRIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"MALONIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"SERINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"GLYCERIC ACID","Organic oxygen compounds","Organic oxygen compounds"
+"FUMARIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"INDOLE","Organoheterocyclic compounds","Indoles and derivatives"
+"SUCCINIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"THREONINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"NICOTINAMIDE","Organoheterocyclic compounds","Pyridines and derivatives"
+"TAURINE","Organic acids and derivatives","Sulfonic acids and derivatives"
+"NICOTINATE","Other / Unknown",NA
+"5,6-DIHYDRO THYMINE","Organoheterocyclic compounds","Diazines"
+"PIPECOLIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"2-METHYLMALEIC ACID","Lipids and lipid-like molecules","Fatty Acyls"
+"4-HYDROXYPROLINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"GLYCYL-GLYCINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"2-HYDROXY-3-METHYLPENTANOIC ACID","Lipids and lipid-like molecules","Fatty Acyls"
+"ASPARTIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"2-ETHYL-2-HYDROXYBUTYRIC ACID","Lipids and lipid-like molecules","Fatty Acyls"
+"2-AMINOBENZOIC ACID","Benzenoids","Benzene and substituted derivatives"
+"1-METHYLNICOTINAMIDE","Organoheterocyclic compounds","Pyridines and derivatives"
+"UROCANATE","Organoheterocyclic compounds","Azoles"
+"KOJIC ACID","Organoheterocyclic compounds","Pyrans"
+"3-METHYLGLUTACONIC ACID","Lipids and lipid-like molecules","Fatty Acyls"
+"1,5,5-TRIMETHYLHYDANTOIN","Other / Unknown",NA
+"INDOLE-3-CARBOXALDEHYDE","Organoheterocyclic compounds","Indoles and derivatives"
+"ALPHA-KETOGLUTARIC ACID","Organic acids and derivatives","Keto acids and derivatives"
+"3-METHYLGLUTARIC ACID","Lipids and lipid-like molecules","Fatty Acyls"
+"ALA-GLY","Organic acids and derivatives","Carboxylic acids and derivatives"
+"GLUTAMIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"4-GUANIDINOBUTANOIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"COUMARIN","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"CINNAMIC ACID","Phenylpropanoids and polyketides","Cinnamic acids and derivatives"
+"ADIPIC ACID","Lipids and lipid-like molecules","Fatty Acyls"
+"TARTARIC ACID","Organic oxygen compounds","Organic oxygen compounds"
+"ARABINOSE","Organic oxygen compounds","Organic oxygen compounds"
+"2,6-DIHYDROXYBENZOIC ACID","Benzenoids","Benzene and substituted derivatives"
+"3-SULFINO-L-ALANINE","Other / Unknown",NA
+"METHYL 3-AMINOPYRAZINE-2-CARBOXYLIC ACID","Organic acids and derivatives",NA
+"OROTIC ACID","Organoheterocyclic compounds","Diazines"
+"TIGLYL GLYCINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"DIHYDROOROTIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"2-OXOADIPATE","Organic acids and derivatives","Keto acids and derivatives"
+"3-HYDROXYCINNAMIC ACID","Phenylpropanoids and polyketides","Cinnamic acids and derivatives"
+"PHENYLALANINEPEAK1","Organic acids and derivatives","Carboxylic acids and derivatives"
+"7-METHYLXANTHINE","Organoheterocyclic compounds","Imidazopyrimidines"
+"3-PHENYLLACTIC ACIDPEAK2","Phenylpropanoids and polyketides","Phenylpropanoic acids"
+"3-(3-HYDROXYPHENYL)PROPIONIC ACIDPEAK2","Phenylpropanoids and polyketides","Phenylpropanoic acids"
+"URIC ACID","Organoheterocyclic compounds","Imidazopyrimidines"
+"THIOPURINE S-METHYLETHER","Organoheterocyclic compounds","Imidazopyrimidines"
+"1-METHYLXANTHINE","Organoheterocyclic compounds","Imidazopyrimidines"
+"PYRIDINE-2,3-DICARBOXYLIC ACID","Organoheterocyclic compounds","Pyridines and derivatives"
+"LUPININE","Alkaloids and derivatives","Lupin alkaloids"
+"GLYCEROL 2-PHOSPHATE","Lipids and lipid-like molecules","Glycerophospholipids"
+"N-ACETYL-LEUCINE","Other / Unknown",NA
+"N-ACETYL-ASPARTIC ACID","Other / Unknown",NA
+"ALLANTOIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"N-ALPHA-ACETYL-L-ASPARAGINE","Other / Unknown",NA
+"N-FORMYL-METHIONINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"N-ACETYL-L-ASPARTIC ACID","Organic acids and derivatives",NA
+"GLUCONO-1,5-LACTONE","Organic oxygen compounds","Organic oxygen compounds"
+"HYDROXYPHENYLLACTIC ACID","Phenylpropanoids and polyketides","Phenylpropanoic acids"
+"4-O-METHYLPHLORACETOPHENONE","Organic oxygen compounds","Organooxygen compounds"
+"THEOBROMINE","Alkaloids and derivatives","none"
+"P-CRESOL SULFATE","Organic acids and derivatives","Organic sulfuric acids and derivatives"
+"N-ACETYL-METHIONINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"D-(-)-QUINIC ACID","Other / Unknown",NA
+"GLUCURONIC ACID","Organic oxygen compounds","Organic oxygen compounds"
+"FERULIC ACID","Phenylpropanoids and polyketides","Cinnamic acids and derivatives"
+"FERULIC ACIDPEAK1","Phenylpropanoids and polyketides","Cinnamic acids and derivatives"
+"HYDROXYCOTININE","Organoheterocyclic compounds","Pyridines and derivatives"
+"GLUCONIC ACID","Organic oxygen compounds","Organic oxygen compounds"
+"XANTHOXYLIN","Organic oxygen compounds","Organooxygen compounds"
+"INDOLEPYRUVIC ACID","Organoheterocyclic compounds","Indoles and derivatives"
+"ACETYL-CARNITINE","Lipids and lipid-like molecules","Fatty Acyls"
+"TRYPTOPHAN","Organoheterocyclic compounds","Indoles and derivatives"
+"1-[4-HYDROXY-3-(3-METHYLBUT-2-ENYL)PHENYL]ETHANONE","Other / Unknown",NA
+"5-METHOXY-3-INDOLEACETIC ACID","Organoheterocyclic compounds","Indoles and derivatives"
+"ALPHA-LIPOIC ACID","Organoheterocyclic compounds","Dithiolanes"
+"LIPOAMIDE","Organoheterocyclic compounds","Dithiolanes"
+"N-ACETYL-PHENYLALANINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"N-ACETYLPHENYLALANINE","Other / Unknown",NA
+"SACCHARIC ACID","Organic oxygen compounds","Organic oxygen compounds"
+"INDOXYL-SULFATE","Other / Unknown",NA
+"SCOPOLETIN","Organoheterocyclic compounds",NA
+"5-KETO-GLUCONIC ACID","Organic acids and derivatives","Hydroxy acids and derivatives"
+"SPHONDIN","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"O-SUCCINYL-HOMOSERINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"PANTOTHENIC ACID","Organic oxygen compounds","Secondary alcohols"
+"ZEATIN","Organoheterocyclic compounds","Imidazopyrimidines"
+"N-ACETYL-GALACTOSAMINE","Organic oxygen compounds","Organic oxygen compounds"
+"5-ACETYLAMINO-6-AMINO-3-METHYLURACIL [M+NA]+","Other / Unknown",NA
+"N-ACETYL-TYROSINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"RETICULOL","Other / Unknown",NA
+"ISOFRAXIDIN","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"SINAPIC ACID","Phenylpropanoids and polyketides","Cinnamic acids and derivatives"
+"GENIPIN","Lipids and lipid-like molecules","Prenol lipids"
+"3-HYDROXYKYNURENINE","Organic oxygen compounds","Organic oxygen compounds"
+"3-NITRO-TYROSINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"FRAXINELLONE","Organoheterocyclic compounds","Isobenzofurans"
+"6-HYDROXYFLAVONE","Phenylpropanoids and polyketides",NA
+"DANTHRON","Benzenoids","Anthracenes"
+"2',4'-DIHYDROXYCHALCONE","Phenylpropanoids and polyketides",NA
+"CYTIDINE","Nucleosides, nucleotides, and analogues","Pyrimidine nucleosides"
+"SUBEROSIN","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"PRENYLETIN","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"RIBOSE 5-PHOSPHATE","Organic oxygen compounds","Organic oxygen compounds"
+"NEBULARINE","Other / Unknown",NA
+"9-METHOXY-2,2-DIMETHYL-6-HYDRO-2H-PYRANO[5,6-C]QUINOLIN-5-ONE","Other / Unknown",NA
+"GLUCOSAMINE 6-PHOSPHATE","Organic oxygen compounds","Organic oxygen compounds"
+"FRUCTOSE 6-PHOSPHATE","Organic oxygen compounds","Organic oxygen compounds"
+"SKIMMIANINE","Organoheterocyclic compounds","Quinolines and derivatives"
+"KHELLIN","Organoheterocyclic compounds","Benzopyrans"
+"(9E)-11A-HYDROXY-3,6,10-TRIMETHYL-6,7,8,11-TETRAHYDRO-4H-CYCLODECA[B]FURAN-2,5-DIONE","Other / Unknown",NA
+"INOSINE","Nucleosides, nucleotides, and analogues","Purine nucleosides"
+"3-{[(7-METHOXY-2-OXOCHROMEN-4-YL)METHYL]METHYLAMINO}PROPANENITRILE","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"7,8-BENZOFLAVONE","Phenylpropanoids and polyketides",NA
+"7-ETHENYL-1,4A,7-TRIMETHYL-3,4,6,8,8A,9,10,10A-OCTAHYDRO-2H-PHENANTHRENE-1-CARBOXYLIC ACID","Organic acids and derivatives",NA
+"(E,E)-PIPERLONGUMININE","Other / Unknown",NA
+"(1S,4S,8R,14S)-11-ETHYL-12-OXO-7,9,13-TRIOXATETRACYCLO[6.5.1.0??,?????.0???,?????]TETRADECA-2,5-DIENE-5-CARBOXYLIC ACID","Organic acids and derivatives",NA
+"LINOLENIC ACID","Lipids and lipid-like molecules","Fatty Acyls"
+"3-(5,7-DIMETHOXY-4-OXOCHROMEN-2-YL)PROPANOIC ACID","Organoheterocyclic compounds","Benzopyrans"
+"ASP-PHE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"1-METHYLADENOSINE","Nucleosides, nucleotides, and analogues","Purine nucleosides"
+"FISETIN","Phenylpropanoids and polyketides","Flavonoids"
+"3(4'-CHLOROPHENYL)-4,6-DIMETHYLCOUMARIN","Organoheterocyclic compounds",NA
+"KAEMPFEROL","Phenylpropanoids and polyketides","Flavonoids"
+"SEDOHEPTULOSE 7-PHOSPHATE","Organic oxygen compounds","Organooxygen compounds"
+"ALTENUSIN","Benzenoids","Benzene and substituted derivatives"
+"METHYL 1-OXO-4-(1H-PYRROL-2-YL)-2H-ISOQUINOLINE-3-CARBOXYLATE","Organoheterocyclic compounds",NA
+"PICROTOXININ","Other / Unknown",NA
+"13-HOTRE","Other / Unknown",NA
+"N1-METHYLGUANOSINE","Nucleosides, nucleotides, and analogues",NA
+"RETINOIC ACID","Lipids and lipid-like molecules","Prenol lipids"
+"TRICETIN","Phenylpropanoids and polyketides","Flavonoids"
+"5-CARBOXYMETHYL-URIDINE","Nucleosides, nucleotides, and analogues",NA
+"PHENYLACETYLGLUTAMINE [M+K]+","Organic acids and derivatives",NA
+"CAPSAICIN","Benzenoids","Phenols"
+"GENISTEIN","Phenylpropanoids and polyketides","Isoflavonoids"
+"7,4'-DIMETHOXYISOFLAVONE","Phenylpropanoids and polyketides",NA
+"4-(2,3-DIHYDROXY-3-METHYLBUTOXY)FURO(3,2-G)CHROMEN-7-ONE","Other / Unknown",NA
+"DIHYDROCAPSAICIN","Benzenoids","Phenols"
+"2'-DEOXYURIDINE 5'-MONOPHOSPHATE","Nucleosides, nucleotides, and analogues","Pyrimidine nucleotides"
+"(2S,3S)-2-(3,4,5-TRIHYDROXYPHENYL)-3,4-DIHYDRO-2H-CHROMENE-3,5,7-TRIOL","Other / Unknown",NA
+"N-ACETYLNEURAMINATE","Organic oxygen compounds","Organic oxygen compounds"
+"INDOXYL-BETA-GLUCURONIDE","Organic oxygen compounds","Organic oxygen compounds"
+"N2,N2-DIMETHYLGUANOSINE","Nucleosides, nucleotides, and analogues",NA
+"1-O-TRANS-CINNAMOYL-BETA-D-GLUCOPYRANOSE","Phenylpropanoids and polyketides","Cinnamic acids and derivatives"
+"2'-DEOXYADENOSINE CYCLIC 3',5'-(HYDROGEN PHOSPHATE)","Nucleosides, nucleotides, and analogues",NA
+"6-BROMO-3'-METHYLFLAVONE","Phenylpropanoids and polyketides",NA
+"2-CHLORO-1,3,8-TRIHYDROXY-6-(HYDROXYMETHYL)ANTHRACENE-9,10-DIONE","Benzenoids","Anthracenes"
+"MYRICETIN","Phenylpropanoids and polyketides","Flavonoids"
+"3'-CMP","Nucleosides, nucleotides, and analogues","Pyrimidine nucleotides"
+"SKIMMIN","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"(2S)-3-(4-HYDROXYPHENYL)-2-[[(Z)-3-(4-HYDROXYPHENYL)PROP-2-ENOYL]AMINO]PROPANOIC ACID","Organic acids and derivatives",NA
+"ADENOSINE 2',3'-CYCLIC MONOPHOSPHATE","Nucleosides, nucleotides, and analogues","Purine nucleotides"
+"(E)-N-[2-HYDROXY-2-(4-HYDROXYPHENYL)ETHYL]-3-(4-HYDROXY-3-METHOXYPHENYL)PROP-2-ENAMIDE","Other / Unknown",NA
+"(2S,3S)-3,5,7-TRIHYDROXY-6-METHYL-2-(3,4,5-TRIHYDROXYPHENYL)-2,3-DIHYDROCHROMEN-4-ONE","Other / Unknown",NA
+"5-AMINOIMIDAZOLE-4-CARBOXAMIDE-1-BETA-RIBOFURANOSYL 5'-MONOPHOSPHATE","Nucleosides, nucleotides, and analogues","Imidazole ribonucleosides and ribonucleotides"
+"FRUCTOSE 1,6-BIPHOSPHATE","Organic oxygen compounds","Organic oxygen compounds"
+"5-AMINOIMIDAZOLE-4-CARBOXAMIDE-1-?-D-RIBOFURANOSYL 5'-MONOPHOSPHATE","Organoheterocyclic compounds",NA
+"ESCULIN","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"TREHALOSE","Organic oxygen compounds","Organooxygen compounds"
+"MUNDOSERONE","Other / Unknown",NA
+"BETA-LACTOSE","Organic oxygen compounds","Organic oxygen compounds"
+"GUANOSINE CYCLIC MONOPHOSPHATE","Other / Unknown",NA
+"ADENOSINE 5'-MONOPHOSPHATE","Nucleosides, nucleotides, and analogues","Purine nucleotides"
+"3(2'-CHLOROPHENYL)-7-HYDROXY-4-PHENYLCOUMARIN","Organoheterocyclic compounds",NA
+"4-METHYLUMBELLIFERYL GLUCURONIDE","Organic oxygen compounds",NA
+"(1S,3R,4S,5R)-4-{[(2E)-3-(3,4-DIHYDROXYPHENYL)PROP-2-ENOYL]OXY}-1,3,5-TRIHYDROXYCYCLOHEXANE-1-CARBOXYLIC ACID","Organic acids and derivatives",NA
+"METHYL 4-HYDROXY-3-(4-HYDROXYPHENYL)-2-[(4-HYDROXYPHENYL)METHYL]-5-OXOFURAN-2-CARBOXYLATE","Other / Unknown",NA
+"ROSMARINIC ACID","Phenylpropanoids and polyketides","Cinnamic acids and derivatives"
+"9-METHOXY-4,4-DIMETHYL-13-PHENYL-6,14-DIOXATETRACYCLO[8.4.0.0??,???.0??,???]TETRADECA-1,7,9-TRIEN-11-ONE","Other / Unknown",NA
+"FENOFIBRIC ACID","Benzenoids","Benzene and substituted derivatives"
+"XANTHOSINE 5'-MONOPHOSPHATE","Nucleosides, nucleotides, and analogues","Purine nucleotides"
+"ZAPOTIN","Phenylpropanoids and polyketides","Flavonoids"
+"JUSTICIDIN B","Lignans, neolignans and related compounds","Arylnaphthalene lignans"
+"ADENOSINE MONOPHOSPHATE","Other / Unknown",NA
+"(Z)-3-[4-METHOXY-2-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYPHENYL]PROP-2-ENOIC ACID","Organic acids and derivatives",NA
+"7,9-DIMETHOXY-6-(4-METHOXYPHENYL)-[1,3]DIOXOLO[4,5-G]CHROMEN-8-ONE","Other / Unknown",NA
+"LACTOBIONIC ACID","Lipids and lipid-like molecules","Fatty Acyls"
+"9-[[3-METHYL-3-[(4-METHYL-5-OXO-2H-FURAN-2-YL)METHYL]OXIRAN-2-YL]METHOXY]FURO[3,2-G]CHROMEN-7-ONE","Other / Unknown",NA
+"[3-HYDROXY-2-METHYL-4-(7-OXOFURO[3,2-G]CHROMEN-9-YL)OXYBUTAN-2-YL] (Z)-2-METHYLBUT-2-ENOATE","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"KINETIN RIBOSIDE","Other / Unknown",NA
+"METHYL 3-(4-HYDROXYPHENYL)-2-[(4-HYDROXYPHENYL)METHYL]-4-METHOXY-5-OXOFURAN-2-CARBOXYLATE","Other / Unknown",NA
+"(2S,3S,4S,5R,6R)-6-(3-BENZOYLOXY-2-HYDROXYPROPOXY)-3,4,5-TRIHYDROXYOXANE-2-CARBOXYLIC ACID","Organic acids and derivatives",NA
+"6-HYDROXY-2-(1-HYDROXY-3-METHYLBUTYL)-1-METHOXY-8-METHYL-10H-BENZO[B][1,5]BENZODIOXOCIN-12-ONE","Other / Unknown",NA
+"METHYL (Z)-5-[(1R,4AR,8AR)-5,5,8A-TRIMETHYL-2-METHYLIDENE-3,4,4A,6,7,8-HEXAHYDRO-1H-NAPHTHALEN-1-YL]-3-(ACETYLOXYMETHYL)PENT-2-ENOATE","Other / Unknown",NA
+"METHYL ROBUSTONE","Phenylpropanoids and polyketides","Isoflavonoids"
+"URIDINE 5'-DIPHOSPHATE","Nucleosides, nucleotides, and analogues","Pyrimidine nucleotides"
+"SHANZHISIDE METHYL ESTER","Other / Unknown",NA
+"6A,12A-DIDEHYDROAMORPHIGENIN","Other / Unknown",NA
+"1,7-BIS(3,4-DIHYDROXYPHENYL)HEPTAN-3-YL ACETATE","Organic acids and derivatives",NA
+"[(9R,10R)-10-ACETYLOXY-8,8-DIMETHYL-2-OXO-9,10-DIHYDROPYRANO[2,3-F]CHROMEN-9-YL] 2-METHYLBUTANOATE","Other / Unknown",NA
+"[3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL] 2,4-DIHYDROXY-6-[(E)-2-PHENYLETHENYL]BENZOATE","Other / Unknown",NA
+"MANGIFERIN","Organoheterocyclic compounds","Benzopyrans"
+"(5-BENZOYLOXY-4,6-DIHYDROXY-3-METHOXYCYCLOHEXEN-1-YL)METHYL BENZOATE","Other / Unknown",NA
+"(1S,3R,6R,7S,8S,9R,10S,13S,16S,17R)-8-TERT-BUTYL-6,9,12,17-TETRAHYDROXY-16-METHYL-2,4,14,19-TETRAOXAHEXACYCLO[8.7.2.0??,????.0??,???.0???,????.0????,?????]NONADECANE-5,15,18-TRIONE","Other / Unknown",NA
+"VITAMIN M","Organic acids and derivatives","Carboxylic acids and derivatives"
+"3-(4-HYDROXYPHENYL)-7-METHOXY-5-[(3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYCHROMEN-4-ONE","Other / Unknown",NA
+"[8-[2-(3-METHYLBUTANOYLOXY)PROPAN-2-YL]-2-OXO-8,9-DIHYDROFURO[2,3-H]CHROMEN-9-YL] 3-METHYLBUTANOATE","Other / Unknown",NA
+"DAIDZIN","Phenylpropanoids and polyketides","Isoflavonoids"
+"[(2R,3S,4S,5R,6S)-3,4,5-TRIHYDROXY-6-(4-HYDROXYPHENOXY)OXAN-2-YL]METHYL (E)-3-(1-HYDROXY-4-OXOCYCLOHEXA-2,5-DIEN-1-YL)PROP-2-ENOATE","Other / Unknown",NA
+"PHENYL(1,2,9,10-TETRAMETHOXY-6-METHYL-5,6-DIHYDRO-4H-DIBENZO[DE,G]QUINOLIN-7-YL)METHANONE","Other / Unknown",NA
+"KAEMPFEROL 3-GLUCURONIDE","Phenylpropanoids and polyketides","Flavonoids"
+"GINNALIN A","Benzenoids","Benzene and substituted derivatives"
+"[(2R,3S,4S,5S)-4-HYDROXY-2,5-BIS(HYDROXYMETHYL)-5-[(2R,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYOXOLAN-3-YL] (E)-3-PHENYLPROP-2-ENOATE","Other / Unknown",NA
+"5,7-DIHYDROXY-3-[(2S,3R,4S,5R,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXY-2-(3,4,5-TRIHYDROXYPHENYL)CHROMEN-4-ONE","Other / Unknown",NA
+"[(2R,3R,4R,5R)-4-ACETYLOXY-5-(2,4-DIOXOPYRIMIDIN-1-YL)-2-(HYDROXYMETHYL)OXOLAN-3-YL] 2,4-DIMETHOXY-6-METHYLBENZOATE","Other / Unknown",NA
+"CALCEOLARIOSIDE A","Phenylpropanoids and polyketides","Cinnamic acids and derivatives"
+"VERPROSIDE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"3,4-DIHYDROXY-5-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-[[4-(2-HYDROXYPROPAN-2-YL)CYCLOHEXENE-1-CARBONYL]OXYMETHYL]OXAN-2-YL]OXYBENZOIC ACID","Benzenoids",NA
+"[(1AS,1BS,5S,5AS,6S)-6-HYDROXY-6-(HYDROXYMETHYL)-2-[[(2R,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYMETHYL]-1B,5,5A,6A-TETRAHYDRO-1AH-OXIRENO[3,4]CYCLOPENTA[1,3-D]PYRAN-5-YL] 3-METHYLBUTANOATE","Other / Unknown",NA
+"CRUSTECDYSONE","Lipids and lipid-like molecules","Steroids and steroid derivatives"
+"3,4,5-TRIHYDROXY-6-[5-HYDROXY-2-(4-HYDROXY-3-METHOXYPHENYL)-3-METHOXY-4-OXOCHROMEN-7-YL]OXYOXANE-2-CARBOXYLIC ACID","Organic acids and derivatives",NA
+"(2S,3R,4AS,12BR)-2,3,4A,8-TETRAHYDROXY-12B-(5-HYDROXY-6-METHYLOXAN-2-YL)OXY-3-METHYL-2,4-DIHYDROBENZO[A]ANTHRACENE-1,7,12-TRIONE","Other / Unknown",NA
+"2-[(2R,4AS,8S,8AS)-8-[2-[(4AS,7R,8AR)-7-(1-CARBOXYETHENYL)-1-HYDROXY-4A-METHYL-2-OXO-6,7,8,8A-TETRAHYDRO-5H-NAPHTHALEN-1-YL]ETHYL]-4A-METHYL-7-OXO-1,2,3,4,8,8A-HEXAHYDRONAPHTHALEN-2-YL]PROP-2-ENOIC ACID","Organic acids and derivatives",NA
+"[6-[3,4-DIHYDROXY-2,5-BIS(HYDROXYMETHYL)OXOLAN-2-YL]OXY-3,4,5-TRIHYDROXYOXAN-2-YL]METHYL (E)-3-(4-HYDROXY-3-METHOXYPHENYL)PROP-2-ENOATE","Other / Unknown",NA
+"(2R,3R,4S,5S,6R)-2-[3-[2-(4-HYDROXY-3-METHOXYPHENYL)-3-(HYDROXYMETHYL)-7-METHOXY-2,3-DIHYDRO-1-BENZOFURAN-5-YL]PROPOXY]-6-(HYDROXYMETHYL)OXANE-3,4,5-TRIOL","Other / Unknown",NA
+"2-[4-[4-[HYDROXY-(4-HYDROXY-3-METHOXYPHENYL)METHYL]-3-(HYDROXYMETHYL)OXOLAN-2-YL]-2-METHOXYPHENOXY]-6-(HYDROXYMETHYL)OXANE-3,4,5-TRIOL","Other / Unknown",NA
+"(2S)-6-[(2S)-5,7-DIHYDROXY-2-(4-HYDROXYPHENYL)-4-OXO-2,3-DIHYDROCHROMEN-8-YL]-5,7-DIHYDROXY-2-(4-HYDROXYPHENYL)-2,3-DIHYDROCHROMEN-4-ONE","Other / Unknown",NA
+"METHYL (4AS,5R,7S,7AS)-7-HYDROXY-5-[3-(4-HYDROXYPHENYL)PROPANOYLOXY]-7-METHYL-1-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXY-4A,5,6,7A-TETRAHYDRO-1H-CYCLOPENTA[C]PYRAN-4-CARBOXYLATE","Other / Unknown",NA
+"[(3R,3AS,4R,6R,8S,9BR)-6-ACETYLOXY-4-BUTANOYLOXY-3,3A-DIHYDROXY-3,6,9-TRIMETHYL-2-OXO-4,5,6A,7,8,9B-HEXAHYDROAZULENO[4,5-B]FURAN-8-YL] (E)-2-METHYLBUT-2-ENOATE","Other / Unknown",NA
+"[4,5-DIHYDROXY-6-(HYDROXYMETHYL)-2-[2,4,6-TRIHYDROXY-3-(4-HYDROXYBENZOYL)PHENYL]OXAN-3-YL] 3,4,5-TRIHYDROXYBENZOATE","Other / Unknown",NA
+"(2S,3R,4S,5S,6R)-2-[4-[(3R,3AS,6S,6AR)-3A-HYDROXY-3-(4-HYDROXY-3-METHOXYPHENYL)-3,4,6,6A-TETRAHYDRO-1H-FURO[3,4-C]FURAN-6-YL]-2-METHOXYPHENOXY]-6-(HYDROXYMETHYL)OXANE-3,4,5-TRIOL","Other / Unknown",NA
+"LACCAIC ACID A","Benzenoids","Anthracenes"
+"ISOVITEXIN 2''-O-ARABINOSIDE","Phenylpropanoids and polyketides","Flavonoids"
+"URIDINE 5'-DIPHOSPHOGALACTOSE","Nucleosides, nucleotides, and analogues","Pyrimidine nucleotides"
+"URIDINE 5'-DIPHOSPHOGLUCURONIC ACID","Nucleosides, nucleotides, and analogues","Pyrimidine nucleotides"
+"3-[(1R,3S,5S,10R,11R,13R,14S,17R)-1,5,11,14-TETRAHYDROXY-10-(HYDROXYMETHYL)-13-METHYL-3-[(2R,3S,4S,5R,6R)-3,4,5-TRIHYDROXY-6-METHYLOXAN-2-YL]OXY-2,3,4,6,7,8,9,11,12,15,16,17-DODECAHYDRO-1H-CYCLOPENTA[A]PHENANTHREN-17-YL]-2H-FURAN-5-ONE","Other / Unknown",NA
+"[3,4,5-TRIHYDROXY-6-[4-HYDROXY-2-[(1,2,3,6-TETRAHYDROXYCYCLOHEXANECARBONYL)OXYMETHYL]PHENOXY]OXAN-2-YL]METHYL BENZOATE","Other / Unknown",NA
+"2-O-RHAMNOSYLVITEXIN","Phenylpropanoids and polyketides","Flavonoids"
+"GUANOSINE 5'-DIPHOSPHOGLUCOSE","Nucleosides, nucleotides, and analogues","Purine nucleotides"
+"URIDINE 5'-DIPHOSPHO-N-ACETYLGLUCOSAMINE","Nucleosides, nucleotides, and analogues","Pyrimidine nucleotides"
+"(1S,2R,4S,9R,10R,14S,15S,17S)-9-(FURAN-3-YL)-1-HYDROXY-15-[(1R)-1-HYDROXY-2-METHOXY-2-OXOETHYL]-10,14,16,16-TETRAMETHYL-7,18-DIOXO-3,8-DIOXAPENTACYCLO[12.3.1.0??,???.0???,????.0???,?????]OCTADECAN-17-YL 2-METHYLPROPANOATE","Other / Unknown",NA
+"6-(FURAN-3-YL)-6,8,12,16,21-PENTAHYDROXY-7,15-DIMETHYL-9-OXO-3,17,19-TRIOXAHEPTACYCLO[9.9.3.0??,?????.0??,???.0??,???.0????,?????.0?????,????]TRICOSAN-14-YL 2-METHYLBUTANOATE","Other / Unknown",NA
+"[(2S,3R,4S,5R,6R)-2-[2-(3,4-DIHYDROXYPHENYL)-5,7-DIHYDROXY-4-OXOCHROMEN-3-YL]OXY-4,5-DIHYDROXY-6-(HYDROXYMETHYL)OXAN-3-YL] 3,4,5-TRIHYDROXYBENZOATE","Other / Unknown",NA
+"PHYTIC ACID","Organic oxygen compounds","Organic oxygen compounds"
+"STACHYOSE","Organic oxygen compounds","Organic oxygen compounds"
+"(2R)-2-[(E)-3-[3-[(1R)-1-CARBOXY-2-(3,4-DIHYDROXYPHENYL)ETHOXY]CARBONYL-2-(3,4-DIHYDROXYPHENYL)-7-HYDROXY-2,3-DIHYDRO-1-BENZOFURAN-4-YL]PROP-2-ENOYL]OXY-3-(3,4-DIHYDROXYPHENYL)PROPANOIC ACID","Organic acids and derivatives",NA
+"SCROPOLIOSIDE D","Other / Unknown",NA
+"5-[[4,5-DIHYDROXY-6-[5-HYDROXY-2-(4-HYDROXYPHENYL)-7-METHOXY-4-OXOCHROMEN-3-YL]OXY-3-(3,4,5-TRIHYDROXY-6-METHYLOXAN-2-YL)OXYOXAN-2-YL]METHOXY]-3-HYDROXY-3-METHYL-5-OXOPENTANOIC ACID","Organic acids and derivatives",NA
+"(2S,3R,4R,5R,6S)-2-[(2R,3S,4R,5R,6R)-4,5-DIHYDROXY-2-(HYDROXYMETHYL)-6-[[7-[2-HYDROXY-1-[3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYETHYL]-1,1,4A,7-TETRAMETHYL-3,4,4B,5,6,8,10,10A-OCTAHYDRO-2H-PHENANTHREN-2-YL]OXY]OXAN-3-YL]OXY-6-METHYLOXANE-3,4,5-TRIOL","Other / Unknown",NA
+"3-[(2S,3R,4S,5S,6R)-3-[(2S,3R)-3,4-DIHYDROXY-4-(HYDROXYMETHYL)OXOLAN-2-YL]OXY-4,5-DIHYDROXY-6-[[(2R,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYMETHYL]OXAN-2-YL]OXY-5,7-DIHYDROXY-2-(4-HYDROXY-3-METHOXYPHENYL)-6-METHOXYCHROMEN-4-ONE","Other / Unknown",NA
+"2-[[4-[4,6-DIHYDROXY-3-(3-METHYLBUT-2-ENYL)-2-[3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYPHENYL]-3-HYDROXY-2-(4-HYDROXYPHENYL)-5-METHOXY-3,4-DIHYDRO-2H-CHROMEN-7-YL]OXY]-6-(HYDROXYMETHYL)OXANE-3,4,5-TRIOL","Other / Unknown",NA
+"6-[[(3S,6AR,6BS,8AR,14BS)-9-HYDROXY-4,4,6A,6B,8A,11,11,14B-OCTAMETHYL-14-OXO-2,3,4A,5,6,7,8,9,10,12,13,14A-DODECAHYDRO-1H-PICEN-3-YL]OXY]-5-[4,5-DIHYDROXY-3-(3,4,5-TRIHYDROXY-6-METHYLOXAN-2-YL)OXYOXAN-2-YL]OXY-3,4-DIHYDROXYOXANE-2-CARBOXYLIC ACID","Organic acids and derivatives",NA
+"[(2S,3R,4S,5S,6R)-6-[[(2R,3R,4R,5S,6R)-3,4-DIHYDROXY-6-(HYDROXYMETHYL)-5-[(2S,3R,4R,5R,6S)-3,4,5-TRIHYDROXY-6-METHYLOXAN-2-YL]OXYOXAN-2-YL]OXYMETHYL]-3,4,5-TRIHYDROXYOXAN-2-YL] (4AR,6AR,6BR,9R,10R,11R,12AR)-10,11-DIHYDROXY-9-(HYDROXYMETHYL)-1,2,6A,6B,9,12A-HEXAMETHYL-4,5,6,6A,7,8,8A,10,11,12,13,14,14A,14B-TETRADECAHYDRO-1H-PICENE-4A-CARBOXYLATE","Other / Unknown",NA
+"2-PYRROLIDINONE","Organoheterocyclic compounds","Pyrrolidines"
+"ALANINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"SARCOSINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"3-HYDROXYPROPIONIC ACID","Organic acids and derivatives","Hydroxy acids and derivatives"
+"ANILINE","Benzenoids","Benzene and substituted derivatives"
+"ACETOACETIC ACID","Organic acids and derivatives","Keto acids and derivatives"
+"3-HYDROXYBUTYRIC ACID","Organic acids and derivatives","Hydroxy acids and derivatives"
+"CADAVERINE","Organic nitrogen compounds","Organic nitrogen compounds"
+"GAMMA-AMINOBUTYRIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"CHOLINE","Organic nitrogen compounds","Organic nitrogen compounds"
+"HYDROQUINONE","Benzenoids","Phenols"
+"HYPOTAURINE","Organic acids and derivatives","Sulfinic acids and derivatives"
+"URACIL","Organoheterocyclic compounds","Diazines"
+"CREATININE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"LEVULINIC ACID","Organic acids and derivatives","Keto acids and derivatives"
+"1-METHYL-HYDANTOIN","Organoheterocyclic compounds","Azolines"
+"N-ACETYLGLYCINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"VALINEPEAK2","Organic acids and derivatives","Carboxylic acids and derivatives"
+"HOMOSERINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"4-HYDROXYBENZALDEHYDE","Organic oxygen compounds","Organic oxygen compounds"
+"NICOTINIC ACID","Organoheterocyclic compounds","Pyridines and derivatives"
+"THYMINE","Organoheterocyclic compounds","Diazines"
+"5-OXO-D-PROLINE","Organic acids and derivatives",NA
+"PYROGLUTAMIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"QUINOLINE","Organoheterocyclic compounds",NA
+"5-HYDROXYINDOLE","Organoheterocyclic compounds","Indoles and derivatives"
+"CREATINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"ISOLEUCINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"LEUCINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"METHYLSUCCINIC ACID","Lipids and lipid-like molecules","Fatty Acyls"
+"3-UREIDOPROPIONIC ACID","Organic acids and derivatives",NA
+" X","Other / Unknown",NA
+"HOMOCYSTEINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"INDOXYL-SULFATE [M+H-SO3]+","Organic acids and derivatives","Organic sulfuric acids and derivatives"
+"N-BENZYLFORMAMIDE","Benzenoids","Benzene and substituted derivatives"
+"MALIC ACID","Organic acids and derivatives","Hydroxy acids and derivatives"
+"ADENINE","Organoheterocyclic compounds","Imidazopyrimidines"
+"HYPOXANTHINE","Organoheterocyclic compounds","Imidazopyrimidines"
+"TYRAMINE","Benzenoids","Benzene and substituted derivatives"
+"UROCANIC ACID","Other / Unknown",NA
+"HISTIDINOL","Organic nitrogen compounds","Organic nitrogen compounds"
+"1,3-DIMETHYLURACIL","Organoheterocyclic compounds","Diazines"
+"ETHANOLAMINE PHOSPHATE","Organic acids and derivatives","Organic phosphoric acids and derivatives"
+"PROLINE BETAINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"3-METHYL-2-OXINDOLE","Organoheterocyclic compounds","Indoles and derivatives"
+"MYOSMINE","Other / Unknown",NA
+"O-ACETYL-L-SERINE","Other / Unknown",NA
+"METHIONINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"3-SULFINO-ALANINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"GUANINE","Organoheterocyclic compounds","Imidazopyrimidines"
+"OXYPURINOL","Organoheterocyclic compounds","Imidazopyrimidines"
+"N1-METHYL-4-PYRIDONE-3-CARBOXAMIDE","Other / Unknown",NA
+"OCTOPAMINE","Benzenoids","Phenols"
+"HISTIDINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"2-HYDROXYOCTANOIC ACID","Lipids and lipid-like molecules","Fatty Acyls"
+"2,8-DIHYDROXYQUINOLINE","Organoheterocyclic compounds",NA
+"2-METHYLBUTYRYLGLYCINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"TRYPTAMINE","Organoheterocyclic compounds","Indoles and derivatives"
+"INDOLE-3-ETHANOL","Organoheterocyclic compounds","Indoles and derivatives"
+"1,6-ANHYDRO-B-GLUCOSE","Organoheterocyclic compounds","Oxepanes"
+"PTERIN","Organoheterocyclic compounds","Pteridines and derivatives"
+"S-METHYL-METHIONINE","Organic acids and derivatives",NA
+"2,4-DIHYDROXYPTERIDINE","Organoheterocyclic compounds","Pteridines and derivatives"
+"P-COUMARIC ACID","Phenylpropanoids and polyketides","Cinnamic acids and derivatives"
+"2-DEOXY-GLUCOSE","Organic oxygen compounds","Organic oxygen compounds"
+"1,5-ANHYDRO-GLUCITOL","Organic oxygen compounds","Organic oxygen compounds"
+"PHENYLALANINEPEAK2","Organic acids and derivatives","Carboxylic acids and derivatives"
+"L-CYSTEIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"CYSTEIC ACID","Other / Unknown",NA
+"PYRIDOXAL","Organoheterocyclic compounds","Pyridines and derivatives"
+"5-METHOXYSALICYLIC ACID","Benzenoids","Benzene and substituted derivatives"
+"2-FUROYLGLYCINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"3-INDOLEACRYLIC ACID [M+H-H2O]+","Organoheterocyclic compounds",NA
+"NORADRENALINE","Benzenoids","Phenols"
+"PYRIDOXINE","Organoheterocyclic compounds","Pyridines and derivatives"
+"4-QUINOLINECARBOXYLIC ACID","Organoheterocyclic compounds","Quinolines and derivatives"
+"N-ALPHA-ACETYL-ASPARAGINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"GLYCYL-PROLINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"ANILINE-2-SULFONIC ACID","Benzenoids","Benzene and substituted derivatives"
+"PHENOLSULFONIC ACID","Benzenoids","Benzene and substituted derivatives"
+"GLYCYL-VALINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"L-ARGININE","Benzenoids","Benzene and substituted derivatives"
+"ARGININE","Other / Unknown",NA
+"N-AMIDINO-ASPARTIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"INDOLEACETIC ACID","Organoheterocyclic compounds","Indoles and derivatives"
+"SEROTONIN","Organoheterocyclic compounds","Indoles and derivatives"
+"N-FORMYLMETHIONINE","Other / Unknown",NA
+"FORMYL-L-METHIONYL","Organic acids and derivatives","Carboxylic acids and derivatives"
+"CYCLAMIC ACID","Organic acids and derivatives","Sulfamic acid derivatives"
+"SODIUM D-GLUCONATE","Organic oxygen compounds","Organooxygen compounds"
+"S-CARBOXYMETHYL-CYSTEINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"HIPPURIC ACID","Benzenoids","Benzene and substituted derivatives"
+"N7-ET-G","Organoheterocyclic compounds","Imidazopyrimidines"
+"MANNOSE","Organic oxygen compounds","Organic oxygen compounds"
+"TYROSINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"1-METHYLURIC ACID","Organoheterocyclic compounds","Imidazopyrimidines"
+"2,6-DIMETHOXYBENZOIC ACID","Benzenoids","Benzene and substituted derivatives"
+"HOMOVANILLIC ACID","Benzenoids","Phenols"
+"METHYL VANILLATE","Benzenoids","Benzene and substituted derivatives"
+"MANNITOL","Organic oxygen compounds","Organic oxygen compounds"
+"4-PYRIDOXIC ACID","Organoheterocyclic compounds","Pyridines and derivatives"
+"PHOSPHORYLCHOLINE","Organic nitrogen compounds",NA
+"N-ACETYL-D-GALACTOSAMINE [M+H-2H2O]+","Organic oxygen compounds",NA
+"ALPHA-N-ACETYL-GLUTAMINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"N-ACETYL-GLUTAMIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"INDOLEACRYLIC ACID","Organoheterocyclic compounds","Indoles and derivatives"
+"INDOLEPROPIONIC ACID","Organoheterocyclic compounds","Indoles and derivatives"
+"N ALPHA-ACETYL-L-LYSINE","Other / Unknown",NA
+"N-ALPHA-ACETYL-LYSINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"NEPSILON,NEPSILON,NEPSILON-TRIMETHYLLYSINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"4-NITROQUINOLINE 1-OXIDE","Organoheterocyclic compounds",NA
+"CITRIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"QUINIC ACID","Organic oxygen compounds","Organic oxygen compounds"
+"4-AMINOHIPPURIC ACID","Benzenoids",NA
+"ALPHA-HYDROXYHIPPURIC ACID","Benzenoids","Benzene and substituted derivatives"
+"SELENOMETHIONINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"ALLANTOIC ACID [M+NA]+","Other / Unknown",NA
+"CYSTEINE-S-SULFATE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"LEUCYL-ALANINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"ASSYMETRICAL DIMETHYLARGININE","Other / Unknown",NA
+"SPERMINE","Organic nitrogen compounds","Amines"
+"N-ACETYL-D-GALACTOSAMINE [M+H-H2O]+","Organic oxygen compounds",NA
+"GLYCYL-GLUTAMINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"PANTHENOL","Other / Unknown",NA
+"N6-(DELTA2-ISOPENTENYL)-ADENINE","Organoheterocyclic compounds","Imidazopyrimidines"
+"BIS-(ACETYL)DIAMINOPENTANE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"INDOXYL SULFATE","Organic acids and derivatives","Organic sulfuric acids and derivatives"
+"HARMINE","Alkaloids and derivatives","Harmala alkaloids"
+"DETHIOBIOTIN","Lipids and lipid-like molecules","Fatty Acyls"
+"3-CHLORO-TYROSINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"KINETIN","Organoheterocyclic compounds","Imidazopyrimidines"
+"KAINIC ACID","Organic acids and derivatives","Carboxylic acids and derivatives"
+"5-SULFOSALICYLIC ACID","Benzenoids","Benzene and substituted derivatives"
+"8-METHOXYPSORALEN","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"8-CHLRO-1-TETRAHYDRONORHARMANONE","Other / Unknown",NA
+"2-HYDROXY-3,4-DIMETHOXYBENZOIC ACID","Benzenoids",NA
+"5-HYDROXY-TRYPTOPHAN","Organoheterocyclic compounds","Indoles and derivatives"
+"OXITRIPTAN 1","Other / Unknown",NA
+"2-HYDROXYCHALCONE","Phenylpropanoids and polyketides","Linear 1,3-diarylpropanoids"
+"ETOFYLLINE","Organoheterocyclic compounds","Imidazopyrimidines"
+"2',3'-DIDEOXYTHYMIDINE","Nucleosides, nucleotides, and analogues",NA
+"N-(CINNAMOYL)-GLYCINE","Organic acids and derivatives",NA
+"PROLINE-HYDROXYPROLINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"ERGOTHIONEINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"2-[(2-AMINOBENZOYL)AMINO]PROPANOIC ACID","Organic acids and derivatives",NA
+"TRYPTOPHAN ETHYL ESTER","Organic acids and derivatives","Carboxylic acids and derivatives"
+"MELATONIN","Organoheterocyclic compounds","Indoles and derivatives"
+"ETHYL 2,3-DIOXO-1,4-DIHYDROQUINOLINE-4-CARBOXYLATE","Organoheterocyclic compounds","Quinolines and derivatives"
+"SUBERYL GLYCINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"2',3'-DIDEOXYADENOSINE","Nucleosides, nucleotides, and analogues",NA
+"6-METHYLFLAVONE","Phenylpropanoids and polyketides",NA
+"CYSTINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"N-ACETYL-D-GALACTOSAMINE [M+NA]+","Organic oxygen compounds",NA
+"BENZOPHENONE-2","Other / Unknown",NA
+"URIDINE","Nucleosides, nucleotides, and analogues","Pyrimidine nucleosides"
+"LEUCYL-LEUCINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"PYRIDOXAL 5-PHOSPHATE","Organoheterocyclic compounds","Pyridines and derivatives"
+"ISOPIMPINELLIN","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"N-ACETYL-TRYPTOPHAN","Organic acids and derivatives",NA
+"5'-DEOXYADENOSINE","Nucleosides, nucleotides, and analogues","5'-deoxyribonucleosides"
+"NEOPTERIN","Other / Unknown",NA
+"DEOXYADENOSINE","Nucleosides, nucleotides, and analogues","Purine nucleosides"
+"METHYL 3,4,5-TRIMETHOXYCINNAMATE","Other / Unknown",NA
+"7,8-DIHYDRONEOPTERIN","Other / Unknown",NA
+"5,7-DIHYDROXYFLAVANONE","Other / Unknown",NA
+"1-PENTANONE, 3-HYDROXY-1,5-DIPHENYL-","Other / Unknown",NA
+"BETA-N-ACETYLGLUCOSAMINE","Organic oxygen compounds","Organic oxygen compounds"
+"METHYL 2-[(2,3-DIHYDROXYBENZOYL)AMINO]-3-HYDROXYPROPANOATE","Other / Unknown",NA
+"ANHYDROBRAZILIC ACID","Organoheterocyclic compounds","Benzopyrans"
+"GLUCOSAMINE 6-SULFATE","Organic oxygen compounds","Organic oxygen compounds"
+"5-METHYLURIDINEPEAK1","Nucleosides, nucleotides, and analogues","Pyrimidine nucleosides"
+"5-METHYLURIDINE","Nucleosides, nucleotides, and analogues","Pyrimidine nucleosides"
+"HOMOVANILLIC ACID SULFATE","Organic acids and derivatives","Organic sulfuric acids and derivatives"
+"GLUCOSE-6-PHOSPHATE","Organic oxygen compounds","Organic oxygen compounds"
+"PURPUROGALLIN-4-CARBOXYLIC ACID","Hydrocarbon derivatives","Tropones"
+"7,8-DIMETHYLALLOXAZINE (LUMICHROME)","Other / Unknown",NA
+"CARBOBENZOXY-L-ASPARAGINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"PHENYLACETYL-GLUTAMINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"LINAMARIN","Organic oxygen compounds","Organooxygen compounds"
+"7-CHLORO-4-METHYL-2-OXOCHROMEN-6-YL PROPANOATE","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"OBLIQUIN","Other / Unknown",NA
+"FORMONONETIN","Phenylpropanoids and polyketides","Isoflavonoids"
+"ADENOSINE","Nucleosides, nucleotides, and analogues","Purine nucleosides"
+"(3AR,5S,5AS,9AR)-5,8-DIMETHYL-1-METHYLIDENE-4,5,5A,6,9,9A-HEXAHYDRO-3AH-AZULENO[6,5-B]FURAN-2,7-DIONE","Other / Unknown",NA
+"N-ACETYLCARNOSINE","Other / Unknown",NA
+"ESTRONE","Other / Unknown",NA
+"2-(1-HYDROXY-1-METHOXY-3-METHYLBUTYL)-6-METHYL-5H-[1,3]DIOXOLO[4,5-C]PYRIDIN-4-ONE","Other / Unknown",NA
+"ALPHA-ARBUTIN","Organic oxygen compounds","Organic oxygen compounds"
+"ANGOLENSIN (R)","Phenylpropanoids and polyketides","Alpha-methyldeoxybenzoin flavonoids"
+"5-[(E)-2-(3,5-DIHYDROXYPHENYL)ETHENYL]-2-METHOXYBENZENE-1,3-DIOL","Other / Unknown",NA
+"(2Z)-2-BENZYLIDENE-6-METHOXY-1-BENZOFURAN-3(2H)-ONE","Benzenoids",NA
+"DAIDZEIN","Phenylpropanoids and polyketides","Isoflavonoids"
+"2-(4-CHLOROPHENYL)-1-(2,4,6-TRIHYDROXYPHENYL)ETHANONE","Other / Unknown",NA
+"3-[(3AS,8R,8AR)-8-HYDROXY-6,8-DIMETHYL-3-METHYLIDENE-2-OXO-3A,4,5,8A-TETRAHYDROCYCLOHEPTA[B]FURAN-7-YL]PROPANOIC ACID","Organic acids and derivatives",NA
+"VITAMIN K4","Benzenoids","Naphthalenes"
+"LUVANGETIN","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"(E)-5-HYDROXY-1,7-DIPHENYLHEPT-1-EN-3-ONE","Other / Unknown",NA
+"L-METHYLADENOSINE","Other / Unknown",NA
+"RHEIN","Other / Unknown",NA
+"GUANOSINE","Nucleosides, nucleotides, and analogues","Purine nucleosides"
+"METHYL 2-BENZAMIDO-3-PHENYLPROPANOATE","Other / Unknown",NA
+"XANTHOSINE","Nucleosides, nucleotides, and analogues","Purine nucleosides"
+"PIPERINE","Alkaloids and derivatives",""
+"DEHYDROABIETYLAMINE","Lipids and lipid-like molecules","Prenol lipids"
+"2'-HYDROXY-A-NAPHTHOFLAVONE","Other / Unknown",NA
+"LICOCHALCONE B","Phenylpropanoids and polyketides","Linear 1,3-diarylpropanoids"
+"DEHYDROCURVULARIN","Phenylpropanoids and polyketides","Macrolides and analogues"
+"N-ACETYLMURAMIC ACID","Organic oxygen compounds","Organic oxygen compounds"
+"7-METHOXY-8-(3-METHYL-5-OXO-2H-FURAN-4-YL)CHROMEN-2-ONE","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"CRYPTOTANSHINONE","Lipids and lipid-like molecules","Prenol lipids"
+"DIOSMETIN","Phenylpropanoids and polyketides","Flavonoids"
+"3(2'-CHLOROPHENYL)-7-ETHOXYCOUMARIN","Organoheterocyclic compounds",NA
+"P-CRESOL GLUCURONIDE","Organic oxygen compounds","Organic oxygen compounds"
+"BRACTEATIN","Phenylpropanoids and polyketides","Aurone flavonoids"
+"STERNBIN","Phenylpropanoids and polyketides","Flavonoids"
+"2,6-DIHYDROXY-7-METHOXY-1,1,4A-TRIMETHYL-3,4,10,10A-TETRAHYDRO-2H-PHENANTHREN-9-ONE","Lipids and lipid-like molecules","Prenol lipids"
+"HERACLENOL","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"BENZOPHENONE-4","Other / Unknown",NA
+"4-METHOXY-9-(2-METHYLBUT-3-EN-2-YL)FURO[3,2-G]CHROMEN-7-ONE","Other / Unknown",NA
+"(3S)-8-HYDROXY-3-METHYL-3,4-DIHYDRO-2H-BENZO[A]ANTHRACENE-1,7,12-TRIONE","Other / Unknown",NA
+"(1E,4Z,6E)-5-HYDROXY-1,7-BIS(4-HYDROXYPHENYL)HEPTA-1,4,6-TRIEN-3-ONE","Phenylpropanoids and polyketides","Diarylheptanoids"
+"GLUTATHIONE REDUCED","Organic acids and derivatives","Carboxylic acids and derivatives"
+"5-HYDROXY-7-(HYDROXYMETHYL)-2-METHYL-2-(5-OXOOXOLAN-2-YL)-3H-CHROMEN-4-ONE","Other / Unknown",NA
+"PIPERANINE","Organoheterocyclic compounds","Benzodioxoles"
+"(3R)-4,4-DIMETHYL-3-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYOXOLAN-2-ONE","Other / Unknown",NA
+"ALPHA-GLUTAMYL-TYROSINE","Organic acids and derivatives","Carboxylic acids and derivatives"
+"1,7,8-TRIHYDROXY-3-METHYL-2,3,4,7-TETRAHYDRO-1H-BENZO[A]ANTHRACEN-12-ONE","Other / Unknown",NA
+"2-[2-(3,4-DIMETHOXYPHENYL)ETHYL]-4-METHOXY-2,3-DIHYDROPYRAN-6-ONE","Other / Unknown",NA
+"TANSHINONE IIA","Lipids and lipid-like molecules","Prenol lipids"
+"1H-2-BENZOXACYCLOTETRADECIN-1-ONE, 3,4,5,6,7,8,9,10-OCTAHYDRO-14,16-DIHYDROXY-3-METHYL-7-OXO-, (E)-","Other / Unknown",NA
+"ZEARALENOL","Phenylpropanoids and polyketides","Macrolides and analogues"
+"VULPINIC ACID","Organoheterocyclic compounds","Dihydrofurans"
+"NEOBAVAISOFLAVONE","Phenylpropanoids and polyketides",NA
+"2-[6-(DIETHYLAMINO)PURIN-9-YL]-5-(HYDROXYMETHYL)OXOLANE-3,4-DIOL","Other / Unknown",NA
+"URIDINE-5-MONOPHOSPHATE","Nucleosides, nucleotides, and analogues","Pyrimidine nucleotides"
+"(-)-BILOBALIDE","Lipids and lipid-like molecules","Prenol lipids"
+"GLABRANINE","Phenylpropanoids and polyketides","Flavonoids"
+"BERGENIN","Benzenoids","Benzene and substituted derivatives"
+"(1S,8S,9S,10S,13R)-6,9,10-TRIMETHYL-2-OXO-4,14-DIOXATETRACYCLO[7.5.0.0??,????.0??,???]TETRADECA-3(7),5-DIEN-8-YL ACETATE","Organic acids and derivatives",NA
+"HIRSUTANONE","Phenylpropanoids and polyketides","Diarylheptanoids"
+"3-(1,2-DIHYDROXYPROPYL)-1,6,8-TRIHYDROXYANTHRACENE-9,10-DIONE","Other / Unknown",NA
+"3-HYDROXY-3',4',5'-TRIMETHOXYFLAVONE","Phenylpropanoids and polyketides",NA
+"ADENOSINE 3',5'-CYCLIC MONOPHOSPHATE","Nucleosides, nucleotides, and analogues","Purine nucleotides"
+"5,13,15-TRIHYDROXY-9-METHYL-10-OXABICYCLO[10.4.0]HEXADECA-1(12),13,15-TRIENE-3,11-DIONE","Other / Unknown",NA
+"SCLAREOL","Lipids and lipid-like molecules","Prenol lipids"
+"ANISOCOUMARIN H","Lipids and lipid-like molecules","Prenol lipids"
+"NICOTINAMIDE MONONUCLEOTIDE","Nucleosides, nucleotides, and analogues","Pyridine nucleotides"
+"EPICATECHIN","Phenylpropanoids and polyketides","Flavonoids"
+"SAPPANONE A DIMETHYL ETHER","Phenylpropanoids and polyketides","Homoisoflavonoids"
+"[1-(7-METHOXY-2-OXOCHROMEN-8-YL)-3-METHYL-2-OXOBUTYL] ACETATE","Organic acids and derivatives",NA
+"AESCULIN","Other / Unknown",NA
+"2-(3,4-DIHYDROXYPHENYL)-5,7-DIHYDROXY-6,8-DIMETHOXYCHROMEN-4-ONE","Other / Unknown",NA
+"THIAMINE MONOPHOSPHATE","Organoheterocyclic compounds","Diazines"
+"MALTITOL","Lipids and lipid-like molecules","Fatty Acyls"
+"GUANOSINE 3',5'-CYCLIC MONOPHOSPHATE","Nucleosides, nucleotides, and analogues","Purine nucleotides"
+"KINETIN-9-RIBOSIDE","Nucleosides, nucleotides, and analogues","Purine nucleosides"
+"EVOXINE","Organoheterocyclic compounds","Quinolines and derivatives"
+"INOSINE 5'-MONOPHOSPHATE","Nucleosides, nucleotides, and analogues","Purine nucleotides"
+"METHYL 2-(4A,6,10A-TRIHYDROXY-1-METHYL-5,10-DIOXO-3,4-DIHYDRO-1H-BENZO[G]ISOCHROMEN-3-YL)ACETATE","Organic acids and derivatives",NA
+"(2S,3R,4S,5S,6R)-2-[4-(3-HYDROXYBUTYL)PHENOXY]-6-(HYDROXYMETHYL)OXANE-3,4,5-TRIOL","Other / Unknown",NA
+"2,4-DIHYDROXYHEPTADEC-16-ENYL ACETATE","Organic acids and derivatives",NA
+"(4,7,7-TRIMETHYL-3-BICYCLO[2.2.1]HEPTANYL) (E)-3-(4-HYDROXY-3-METHOXYPHENYL)PROP-2-ENOATE","Other / Unknown",NA
+"CANDIDONE","Phenylpropanoids and polyketides","Flavonoids"
+"CHLOROGENIC ACID","Organic oxygen compounds","Organic oxygen compounds"
+"(9-HYDROXY-5,8-DIMETHYL-1-METHYLIDENE-2,6-DIOXO-4,8A,9,9A-TETRAHYDRO-3AH-AZULENO[6,7-B]FURAN-4-YL) 3-METHYLBUT-2-ENOATE","Other / Unknown",NA
+"TURANOSE","Lipids and lipid-like molecules","Fatty Acyls"
+"5-HYDROXY-7-[2-(2-HYDROXY-5-OXO-2H-FURAN-3-YL)ETHYL]-7,8-DIMETHYL-5,6,6A,8,9,10-HEXAHYDRO-1H-BENZO[D][2]BENZOFURAN-3-ONE","Other / Unknown",NA
+"(4R,6S,8S,9Z,11E)-16-CHLORO-17,19-DIHYDROXY-4-METHYL-3,7-DIOXATRICYCLO[13.4.0.0???,???]NONADECA-1(15),9,11,16,18-PENTAENE-2,13-DIONE","Other / Unknown",NA
+"MALTOSE [M+NA]+","Organic oxygen compounds","Organooxygen compounds"
+"CELLOBIOSE (D[+])","Other / Unknown",NA
+"(7E,13E)-9,15-DIHYDROXY-4,10,16-TRIMETHYL-1,5,11-TRIOXACYCLOHEXADECA-7,13-DIENE-2,6,12-TRIONE","Other / Unknown",NA
+"METHYL CHLOROGENATE","Organic oxygen compounds","Organooxygen compounds"
+"8-HYDROXY-6-METHOXY-7-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYCHROMEN-2-ONE","Other / Unknown",NA
+"2,4-DIHYDROXY-6-METHYL-3-[(2E,4E)-3-METHYL-5-[(1R,2R,6R)-1,2,6-TRIMETHYL-3-OXOCYCLOHEXYL]PENTA-2,4-DIENYL]BENZALDEHYDE","Benzenoids",NA
+"MYRISTOYL-CARNITINE","Organic nitrogen compounds",NA
+"(4R,8S)-17-CHLORO-2,18-DIMETHOXY-7,9,13-TRIOXAPENTACYCLO[10.8.0.0??,?????.0???,???.0?????,?????]ICOSA-1(12),2,5,10,14,16,18-HEPTAEN-20-ONE","Other / Unknown",NA
+"GENIPOSIDIC ACID","Lipids and lipid-like molecules","Prenol lipids"
+"2-HYDROXY-4-METHOXY-3,5-BIS(3-METHYLBUT-2-ENYL)-6-PENTYLBENZOIC ACID","Benzenoids",NA
+"8-METHOXY-7-[(E)-3-METHYL-4-(4-METHYL-5-OXO-2H-FURAN-2-YL)BUT-2-ENOXY]CHROMEN-2-ONE","Other / Unknown",NA
+"MELIBIOSE","Organic oxygen compounds","Organic oxygen compounds"
+"RESERPILINE","Other / Unknown",NA
+"2-[[1-(4-NITROBENZOYL)PYRROLIDINE-2-CARBONYL]AMINO]BENZOIC ACID","Benzenoids",NA
+"METHYL ASTERRATE","Benzenoids","Benzene and substituted derivatives"
+"6,7-DIMETHOXY-8-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYCHROMEN-2-ONE","Other / Unknown",NA
+"[(3AS,4S,5S,6E,10Z,11AR)-6-FORMYL-5-HYDROXY-10-(HYDROXYMETHYL)-3-METHYLIDENE-2-OXO-3A,4,5,8,9,11A-HEXAHYDROCYCLODECA[B]FURAN-4-YL] 2-METHYLPROP-2-ENOATE","Lipids and lipid-like molecules","Prenol lipids"
+"2,3-BIS[(4-HYDROXY-3-METHOXYPHENYL)METHYL]BUTANE-1,4-DIOL","Other / Unknown",NA
+"ACTINONIN","Organic acids and derivatives","Carboxylic acids and derivatives"
+"[12-HYDROXY-6-(HYDROXYMETHYL)-10-METHYL-2-(4-METHYLPENT-3-ENYL)DODECA-2,6,10-TRIENYL] ACETATE","Organic acids and derivatives",NA
+"(2S,3R,4S,5S,6R)-2-[3-HYDROXY-5-[(Z)-2-(4-HYDROXYPHENYL)ETHENYL]PHENOXY]-6-(HYDROXYMETHYL)OXANE-3,4,5-TRIOL","Phenylpropanoids and polyketides","Stilbenes"
+"ILICICOLIN A","Lipids and lipid-like molecules","Prenol lipids"
+"DAPHNORETINE ACETATE","Phenylpropanoids and polyketides","Coumarins and derivatives"
+"SYRINGIN","Organic oxygen compounds","Organooxygen compounds"
+"(1R,2E,8S,10R,11S)-10,11-DIHYDROXY-6-(METHOXYMETHYL)-1,10-DIMETHYL-5-OXO-4,14-DIOXATRICYCLO[9.2.1.0??,???]TETRADECA-2,6-DIEN-8-YL 2-METHYLPROP-2-ENOATE","Other / Unknown",NA
+"BRUCINE","Alkaloids and derivatives","Strychnos alkaloids"
+"S-ADENOSYLMETHIONINE (SAM)","Organic acids and derivatives",NA
+"6-FORMYL-5-HYDROXY-10-(HYDROXYMETHYL)-3-METHYLIDENE-2-OXO-2H,3H,3AH,4H,5H,8H,9H,11AH-CYCLODECA[B]FURAN-4-YL 2-METHYLBUTANOATE","Other / Unknown",NA
+"(5-BENZOYLOXY-3-CHLORO-4,6-DIHYDROXYCYCLOHEXEN-1-YL)METHYL BENZOATE","Other / Unknown",NA
+"GMELINOL","Lignans, neolignans and related compounds","Furanoid lignans"
+"(9-ACETYLOXY-8,8-DIMETHYL-2-OXO-9,10-DIHYDROPYRANO[2,3-F]CHROMEN-10-YL) (Z)-2-METHYLBUT-2-ENOATE","Other / Unknown",NA
+"[(2R,3S,4R)-5-(2,4-DIOXOPYRIMIDIN-1-YL)-4-HYDROXY-2-(HYDROXYMETHYL)OXOLAN-3-YL] 4-HYDROXY-2-METHOXY-6-METHYLBENZOATE","Other / Unknown",NA
+"METHYL (1S)-7-HYDROXY-7-METHYL-1-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXY-4A,5,6,7A-TETRAHYDRO-1H-CYCLOPENTA[C]PYRAN-4-CARBOXYLATE","Other / Unknown",NA
+"CRATOXYARBORENONE E","Organoheterocyclic compounds","Benzopyrans"
+"3-O-METHYLFUNICONE","Organic oxygen compounds","Organooxygen compounds"
+"GLYCOCHENODEOXYCHOLIC ACID  [M+H-H4O2]+","Other / Unknown",NA
+"[(6E,10Z)-10-(ACETYLOXYMETHYL)-6-FORMYL-3-METHYLIDENE-2-OXO-3A,4,5,8,9,11A-HEXAHYDROCYCLODECA[B]FURAN-4-YL] 2-METHYLBUTANOATE","Other / Unknown",NA
+"DIHYDROMUNDULETONE","Phenylpropanoids and polyketides","Stilbenes"
+"OSAJIN","Other / Unknown",NA
+"METHYL DICHLOROASTERRATE","Other / Unknown",NA
+"(E)-RESVERATROLOSIDE","Phenylpropanoids and polyketides",NA
+"(1S,2R,5R,6R,10R,13S,15S)-5-[(2R,3E,5R)-5,6-DIMETHYLHEPT-3-EN-2-YL]-6,10-DIMETHYL-16,17-DIOXAPENTACYCLO[13.2.2.0??,???.0??,???.0?????,?????]NONADEC-18-EN-13-OL","Other / Unknown",NA
+"CHOLIC ACID","Lipids and lipid-like molecules","Steroids and steroid derivatives"
+"PURPACTIN A","Organic oxygen compounds","Organooxygen compounds"
+"GLYCOCHENODEOXYCHOLIC ACID  [M+H-H2O]+","Other / Unknown",NA
+"GUAJAVARIN","Phenylpropanoids and polyketides","Flavonoids"
+"PRUNIN","Phenylpropanoids and polyketides","Flavonoids"
+"PICROPODOPHYLLIN","Other / Unknown",NA
+"KAEMPFEROL 3-ALPHA-L-ARABINOPYRANOSIDE","Phenylpropanoids and polyketides","Flavonoids"
+"11-(HYDROXYMETHYL)-2,6,6,14,19-PENTAMETHYL-7,16,18-TRIOXAPENTACYCLO[12.6.1.0??,????.0???,?????.0?????,????]HENICOSA-5(10),11-DIENE-3,8,15,20-TETRONE","Other / Unknown",NA
+"(2R,3S)-7-[(2S,3R,4R,5S)-3,4-DIHYDROXY-5-(HYDROXYMETHYL)OXOLAN-2-YL]OXY-2-(3,4-DIHYDROXYPHENYL)-3,4-DIHYDRO-2H-CHROMENE-3,5-DIOL","Other / Unknown",NA
+"[8,8-DIMETHYL-10-(3-METHYLBUT-2-ENOYLOXY)-2-OXO-9,10-DIHYDROPYRANO[2,3-F]CHROMEN-9-YL] 3-METHYLBUTANOATE","Other / Unknown",NA
+"QUERCITRIN","Other / Unknown",NA
+"2-[[4-(2,4-DIHYDROXY-3,5,6-TRIMETHYLBENZOYL)OXY-2-HYDROXY-6-METHYLBENZOYL]AMINO]-3-HYDROXYBUTANOIC ACID","Organic acids and derivatives",NA
+"[(2R,3R,4S,5R,6S)-6-[(3S,4S,5S,6R)-4,5-DIHYDROXY-6-(HYDROXYMETHYL)OXAN-3-YL]OXY-3,4,5-TRIHYDROXYOXAN-2-YL]METHYL BENZOATE","Other / Unknown",NA
+"METHYL 2-[[4-HYDROXY-3-(3-METHYLBUT-2-ENYL)PHENYL]METHYL]-3-(4-HYDROXYPHENYL)-4-METHOXY-5-OXOFURAN-2-CARBOXYLATE","Other / Unknown",NA
+"11-(2-BROMO-3,6-DIMETHOXYPHENYL)-3,3-DIMETHYL-2,3,4-TRIHYDRO-5H,10H,11H-BENZO[ B]BENZO[2,1-F]1,4-DIAZEPIN-1-ONE","Other / Unknown",NA
+"MUNDULONE","Other / Unknown",NA
+"LOBARIC ACID","Phenylpropanoids and polyketides","Depsides and depsidones"
+"[(2R,3S,4S,5R,6R)-6-[(2S,3S,4S,5R)-3,4-DIHYDROXY-2,5-BIS(HYDROXYMETHYL)OXOLAN-2-YL]OXY-3,4,5-TRIHYDROXYOXAN-2-YL]METHYL 4-HYDROXYBENZOATE","Other / Unknown",NA
+"CARAPIN","Lipids and lipid-like molecules","Prenol lipids"
+"HEDERAGENIN","Lipids and lipid-like molecules","Prenol lipids"
+"7-HYDROXY-2,6,9,12,17,17-HEXAMETHYL-22-METHYLIDENE-5,16,19,21-TETRAOXAHEPTACYCLO[10.8.1.1??,???.0??,????.0??,???.0????,?????.0?????,?????]DOCOS-13-ENE-4,8,15-TRIONE","Other / Unknown",NA
+"DG-C8-MEIQX","Nucleosides, nucleotides, and analogues","Purine nucleosides"
+"(2R,7S,13R,14R,16S,19R,20S)-19-(FURAN-3-YL)-11-HYDROXY-9,9,13,20-TETRAMETHYL-4,8,15,18-TETRAOXAHEXACYCLO[11.9.0.0??,???.0??,?????.0?????,?????.0?????,?????]DOCOS-10-ENE-5,12,17-TRIONE","Other / Unknown",NA
+"4-(2-NITROETHYL)PHENYL 6-O-??-D-XYLOPYRANOSYL-??-D-GLUCOPYRANOSIDE","Other / Unknown",NA
+"TAUROLITHOCHOLIC ACID","Lipids and lipid-like molecules","Steroids and steroid derivatives"
+"5-(1,2,3,4,5,6-HEXAHYDROXYHEXOXY)-6-HYDROXY-3-METHOXY-9-METHYL-4,5-DIHYDRO-3H-PYRANO[3,4-H][1]BENZOXEPINE-2,7-DIONE","Other / Unknown",NA
+"8BETA-HYDROXYCARAPIN, 3,8-HEMIACETAL","Other / Unknown",NA
+"CDP-CHOLINE","Other / Unknown",NA
+"PLUMIERIDE","Lipids and lipid-like molecules","Prenol lipids"
+"[(4E)-7-ACETYLOXY-6-HYDROXY-2-METHYL-10-OXO-2,3,6,7,8,9-HEXAHYDROOXECIN-3-YL] (E)-BUT-2-ENOATE","Other / Unknown",NA
+"(1R,2R,4S,7S,8R,9R,10S,11R,12S,13S,14R,17R,18R,19R)-8-(ACETYLOXY)-10,19-DIHYDROXY-1,9,18-TRIMETHYL-15-OXO-16,20-DIOXAHEXACYCLO[15.3.2.0??,????.0???,????.0???,????.0?????,?????]DOCOS-5-ENE-5-CARBOXYLIC ACID","Other / Unknown",NA
+"(1R,4S,7R,8S)-7-[(2E,4E)-HEXA-2,4-DIENOYL]-3-HYDROXY-8-[(2S)-3-HYDROXY-2,4-DIMETHYL-5-OXO-2,5-DIHYDROFURAN-2-YL]-5-[(2E,4E)-1-HYDROXYHEXA-2,4-DIEN-1-YLIDENE]-1,3-DIMETHYLBICYCLO[2.2.2]OCTANE-2,6-DIONE","Other / Unknown",NA
+"NEOANDROGRAPHOLIDE","Other / Unknown",NA
+"(3E,5S,7R,8R,11E,13S,15R,16R)-3,5,7,11,13,15-HEXAMETHYL-8,16-BIS(1,3-OXAZOL-5-YLMETHYL)-1,9-DIOXACYCLOHEXADECA-3,11-DIENE-2,10-DIONE","Other / Unknown",NA
+"4-[(E)-3-[(2R,3R,4S,5S,6R)-3-[(2S,3R,4R)-3,4-DIHYDROXY-4-(HYDROXYMETHYL)OXOLAN-2-YL]OXY-4,5-DIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYBUT-1-ENYL]-3,5,5-TRIMETHYLCYCLOHEX-2-EN-1-ONE","Other / Unknown",NA
+"[4A-HYDROXY-7-(HYDROXYMETHYL)-1-[3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXY-5,7A-DIHYDRO-1H-CYCLOPENTA[C]PYRAN-5-YL] 4-HYDROXYBENZOATE","Other / Unknown",NA
+"MALTOTRIOSE","Organic oxygen compounds","Carbohydrates and carbohydrate conjugates"
+"RAFFINOSE","Organic oxygen compounds","Carbohydrates and carbohydrate conjugates"
+"CARMINIC ACID","Benzenoids","Anthracenes"
+"METHYL (3R,4R,5R)-5-[(2R,3R,4S,5S,6R)-4,5-DIHYDROXY-6-(HYDROXYMETHYL)-3-[(E)-3-PHENYLPROP-2-ENOYL]OXYOXAN-2-YL]OXY-3,4-DIHYDROXYCYCLOHEXENE-1-CARBOXYLATE","Other / Unknown",NA
+"[3,4,5-TRIHYDROXY-6-[[3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYMETHYL]OXAN-2-YL] 2,6,6-TRIMETHYLCYCLOHEXENE-1-CARBOXYLATE","Other / Unknown",NA
+"GUANOSINE 5'-TRIPHOSPHATE","Nucleosides, nucleotides, and analogues","Purine nucleotides"
+"METHYL (3R,4R,5R)-3,4-DIHYDROXY-5-[(2R,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-[[(E)-3-PHENYLPROP-2-ENOYL]OXYMETHYL]OXAN-2-YL]OXYCYCLOHEXENE-1-CARBOXYLATE","Other / Unknown",NA
+"MELEZITOSE","Organic oxygen compounds","Organooxygen compounds"
+"2-(4-HYDROXYPHENYL)ETHYL (1S,4AR,7AR)-4A-HYDROXY-7-METHYL-5-OXO-1-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXY-1,6,7,7A-TETRAHYDROCYCLOPENTA[C]PYRAN-4-CARBOXYLATE","Other / Unknown",NA
+"3-DEOXO-3BETA-ACETOXYDEOXYDIHYDROGEDUNIN","Other / Unknown",NA
+"DESACETYL (7)KHIVORINIC ACID, METHYL ESTER","Organoheterocyclic compounds","Naphthopyrans"
+"METHYL 3-[3,4-DIHYDROXY-5-(3-METHYLBUT-2-ENYL)PHENYL]-2-[[4-HYDROXY-3-(3-METHYLBUT-2-ENYL)PHENYL]METHYL]-4-METHOXY-5-OXOFURAN-2-CARBOXYLATE","Other / Unknown",NA
+"(1R,7S,8E,9S,14S,15S,17R)-8-ETHYLIDENE-15-(1-HYDROXYPROPAN-2-YL)-17-METHYL-7-{[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXY}-2,6,12-TRIOXATRICYCLO[12.2.1.0???,???]HEPTADEC-4-ENE-3,11-DIONE","Other / Unknown",NA
+"7-[(2S,3R,4R,5R,6S)-3,4,5-TRIHYDROXY-6-METHYLOXAN-2-YL]OXY-3-[4-[(2S,3R,4R,5R,6S)-3,4,5-TRIHYDROXY-6-METHYLOXAN-2-YL]OXYPHENYL]CHROMEN-4-ONE","Other / Unknown",NA
+"5,7-DIHYDROXY-2-PHENYL-6-[3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]-8-(3,4,5-TRIHYDROXYOXAN-2-YL)CHROMEN-4-ONE","Other / Unknown",NA
+"DIHYDROCELASTRYL DIACETATE","Benzenoids","Phenanthrenes and derivatives"
+"(2S,3R,4S,5S,6R)-2-[4-[(3R,4S)-4-HYDROXY-4-[(4-HYDROXY-3-METHOXYPHENYL)METHYL]-3-(HYDROXYMETHYL)OXOLAN-2-YL]-2-METHOXYPHENOXY]-6-(HYDROXYMETHYL)OXANE-3,4,5-TRIOL","Other / Unknown",NA
+"METHYL (2S,3R,4S)-4-[[(1R)-2-ACETYL-6,7-DIHYDROXY-3,4-DIHYDRO-1H-ISOQUINOLIN-1-YL]METHYL]-3-ETHENYL-2-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXY-3,4-DIHYDRO-2H-PYRAN-5-CARBOXYLATE","Other / Unknown",NA
+"5,7-DIHYDROXY-2-(4-HYDROXYPHENYL)-8-[3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]-6-(3,4,5-TRIHYDROXYOXAN-2-YL)CHROMEN-4-ONE","Other / Unknown",NA
+"METHYL 8,11,15,20,22-PENTAHYDROXY-24-METHYL-13,18,27-TRIOXO-6-OXAHEPTACYCLO[15.10.2.0??,?????.0??,?????.0???,?????.0???,????.0????,?????]NONACOSA-3,5(14),11,15,19,21(26),22,24,28-NONAENE-7-CARBOXYLATE","Other / Unknown",NA
+"5,7-DIHYDROXY-2-(4-HYDROXYPHENYL)-3-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-[[(2S,3R,4S,5S)-3,4,5-TRIHYDROXYOXAN-2-YL]OXYMETHYL]OXAN-2-YL]OXYCHROMEN-4-ONE","Other / Unknown",NA
+"METHYL (4S,5Z,6S)-4-[2-[[(1S,2R,3R,5R)-5-(1,3-DIHYDROXYPROPAN-2-YL)-3-HYDROXY-2-METHYLCYCLOPENTYL]METHOXY]-2-OXOETHYL]-5-ETHYLIDENE-6-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXY-4H-PYRAN-3-CARBOXYLATE","Other / Unknown",NA
+"8-[(2S,3R,4R,5S,6R)-3,4-DIHYDROXY-6-(HYDROXYMETHYL)-5-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYOXAN-2-YL]-5,7-DIHYDROXY-2-(4-HYDROXYPHENYL)CHROMEN-4-ONE","Other / Unknown",NA
+"3-[(2S,3R,4S,5S,6R)-4,5-DIHYDROXY-6-(HYDROXYMETHYL)-3-[(2S,3R,4S,5R)-3,4,5-TRIHYDROXYOXAN-2-YL]OXYOXAN-2-YL]OXY-5,7-DIHYDROXY-2-(4-HYDROXYPHENYL)CHROMEN-4-ONE","Other / Unknown",NA
+"[(2R,3S,4S,5R,6S)-6-[2,3-DIHYDROXY-4-[(E)-3-(4-HYDROXYPHENYL)PROP-2-ENOYL]PHENOXY]-3,4,5-TRIHYDROXYOXAN-2-YL]METHYL (E)-3-(4-HYDROXYPHENYL)PROP-2-ENOATE","Other / Unknown",NA
+"NARINGIN","Other / Unknown",NA
+"[(2S,3R,4R,5R,6S)-2-[[(1AS,1BS,2S,5AR,6S,6AS)-1A-(HYDROXYMETHYL)-2-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXY-2,5A,6,6A-TETRAHYDRO-1BH-OXIRENO[5,6]CYCLOPENTA[1,3-C]PYRAN-6-YL]OXY]-4,5-DIHYDROXY-6-METHYLOXAN-3-YL] (E)-3-PHENYLPROP-2-ENOATE","Other / Unknown",NA
+"[(2S,3R,4S,5R,6S)-6-[[(1AS,1BS,2S,5AR,6S,6AS)-1A-(HYDROXYMETHYL)-2-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXY-2,5A,6,6A-TETRAHYDRO-1BH-OXIRENO[5,6]CYCLOPENTA[1,3-C]PYRAN-6-YL]OXY]-4,5-DIHYDROXY-2-METHYLOXAN-3-YL] (E)-3-(4-METHOXYPHENYL)PROP-2-ENOATE","Other / Unknown",NA
+"(2E,6E,10E)-14-[(2S,3R,4S,5S,6R)-4,5-DIHYDROXY-6-(HYDROXYMETHYL)-3-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYOXAN-2-YL]OXY-4-HYDROXY-2,6,10,14-TETRAMETHYLHEXADECA-2,6,10,15-TETRAENOIC ACID","Organic acids and derivatives",NA
+"METHYL (4S,5Z,6S)-5-ETHYLIDENE-4-[2-OXO-2-[[(2R,3S,4S,5R,6R)-3,4,5-TRIHYDROXY-6-[2-(4-HYDROXYPHENYL)ETHOXY]OXAN-2-YL]METHOXY]ETHYL]-6-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXY-4H-PYRAN-3-CARBOXYLATE","Other / Unknown",NA
+"METHYL (5Z)-5-[2-(4-HYDROXY-3-METHOXYBENZOYL)OXYETHYLIDENE]-4-[2-[2-(4-HYDROXYPHENYL)ETHOXY]-2-OXOETHYL]-6-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXY-4H-PYRAN-3-CARBOXYLATE","Other / Unknown",NA
+"5-HYDROXY-3-[(2S,3R,4R,5S)-3-HYDROXY-5-(HYDROXYMETHYL)-4-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYOXOLAN-2-YL]OXY-2-(4-HYDROXYPHENYL)-7-[(2S,3R,4R,5R,6S)-3,4,5-TRIHYDROXY-6-METHYLOXAN-2-YL]OXYCHROMEN-4-ONE","Other / Unknown",NA
+"(2S,3R,4R,5R,6S)-2-{[(2S,3R,4S,5S)-4,5-DIHYDROXY-2-[(1'S,2R,4'S,7'S,8'R,9'S,13'R,14'R,16'S)-7',9',13'-TRIMETHYL-5-METHYLIDENE-5'-OXASPIRO[OXANE-2,6'-PENTACYCLO[10.8.0.0??,???.0???,???.0????,?????]ICOSAN]-18'-EN-14'-OLOXY]OXAN-3-YL]OXY}-6-METHYLOXANE-3,4,5-TRIOL","Other / Unknown",NA
+"[4,5-DIACETYLOXY-6-[7-HYDROXY-5-METHOXY-4-OXO-2-[4-[3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYPHENYL]CHROMEN-6-YL]OXAN-3-YL] ACETATE","Organic acids and derivatives",NA
+"METHYL (1S,4AS,7AS)-7-(HYDROXYMETHYL)-1-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-[[(2R,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-[[(E)-3-(4-HYDROXY-3,5-DIMETHOXYPHENYL)PROP-2-ENOYL]OXYMETHYL]OXAN-2-YL]OXYMETHYL]OXAN-2-YL]OXY-1,4A,5,7A-TETRAHYDROCYCLOPENTA[C]PYRAN-4-CARBOXYLATE","Other / Unknown",NA
+"[(2R,3R,4S,5R,6R)-6-[2-(3,4-DIHYDROXYPHENYL)ETHOXY]-2-(HYDROXYMETHYL)-5-[(2S,3R,4R,5R,6S)-3,4,5-TRIHYDROXY-6-METHYLOXAN-2-YL]OXY-4-[(3R,4R,5R,6S)-3,4,5-TRIHYDROXY-6-METHYLOXAN-2-YL]OXYOXAN-3-YL] (E)-3-(3,4-DIHYDROXYPHENYL)PROP-2-ENOATE","Other / Unknown",NA
+"GITOXIN","Lipids and lipid-like molecules","Steroids and steroid derivatives"
+"[(2S,3S,4S,5R,6S)-6-[[(1AS,2S,6S,6AS)-1A-(HYDROXYMETHYL)-2-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXY-2,5A,6,6A-TETRAHYDRO-1BH-OXIRENO[5,6]CYCLOPENTA[1,3-C]PYRAN-6-YL]OXY]-5-HYDROXY-2-METHYL-4-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYOXAN-3-YL] (E)-3-(4-METHOXYPHENYL)PROP-2-ENOATE","Other / Unknown",NA
+"(2S,3S,4R,5R,6R)-6-[[(3R,6AR,6BS,8R,8AR,14BR)-8-HYDROXY-4,4,6A,6B,11,11,14B-HEPTAMETHYL-8A-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYCARBONYL-1,2,3,4A,5,6,7,8,9,10,12,12A,14,14A-TETRADECAHYDROPICEN-3-YL]OXY]-4,5-DIHYDROXY-3-[(2S,3R,4S,5R)-3,4,5-TRIHYDROXYOXAN-2-YL]OXYOXANE-2-CARBOXYLIC ACID","Organic acids and derivatives",NA
+"[(2S,3R,4S,5R,6S)-6-[(2S,3R,4S,5R,6R)-4,5-DIHYDROXY-2-[5-HYDROXY-2-(4-HYDROXYPHENYL)-4-OXO-7-[(2S,3R,4S,5S,6R)-3,4,5-TRIHYDROXY-6-(HYDROXYMETHYL)OXAN-2-YL]OXYCHROMEN-3-YL]OXY-6-[[(2R,3R,4R,5R,6S)-3,4,5-TRIHYDROXY-6-METHYLOXAN-2-YL]OXYMETHYL]OXAN-3-YL]OXY-4,5-DIHYDROXY-2-METHYLOXAN-3-YL] ACETATE","Organic acids and derivatives",NA
+"(3R,4R,6AR,6BS,8AS,14BR)-8A-[6-[[3,4-DIHYDROXY-6-(HYDROXYMETHYL)-5-[(2S,3R,4R,5R,6S)-3,4,5-TRIHYDROXY-6-METHYLOXAN-2-YL]OXYOXAN-2-YL]OXYMETHYL]-3,4,5-TRIHYDROXYOXAN-2-YL]OXYCARBONYL-3-HYDROXY-4,6A,6B,11,11,14B-HEXAMETHYL-1,2,3,4A,5,6,7,8,9,10,12,12A,14,14A-TETRADECAHYDROPICENE-4-CARBOXYLIC ACID","Organic acids and derivatives",NA
