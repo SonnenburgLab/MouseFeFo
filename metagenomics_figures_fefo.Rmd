@@ -1,0 +1,899 @@
+```{r setup}
+library(tidyverse)
+library(vegan)
+library(ggplot2)
+library(readxl)
+library(patchwork)
+library(RColorBrewer)
+library(ggrepel)
+library(ANCOMBC)
+library(phyloseq)
+
+collapse_threshold <- 0.01 #collapsing for taxa barplots
+HIGH_ABUND_THRESH  <- 1.0   # mean relative abundance >= 1% for volcano plot
+```
+
+```{r data}
+mph <- read_tsv(
+  "metaphlan_db1_combined_reports.txt",
+  comment = "#")
+md <- read_excel(
+  "mouse_md_sauerkraut.xlsx"
+)
+out_dir <- "/results"
+dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
+
+if ("NCBI_tax_id" %in% names(mph)) mph <- mph %>% select(-NCBI_tax_id)
+
+md <- md %>%
+  mutate(
+    Diet = case_when(
+      str_starts(`Tube ID`, "HFD")  ~ "HFD",
+      str_starts(`Tube ID`, "CONV") ~ "CONV",
+      TRUE ~ NA_character_
+    ),
+    Treatment = factor(Treatment,
+                       levels = intersect(
+                         c("Water", "Unfermented", "3w Fermented", "Metabolites"),
+                         unique(Treatment)
+                       )),
+    Diet      = factor(Diet, levels = c("CONV", "HFD")),
+    TreatDiet = factor(
+      paste(Treatment, Diet, sep = "\n"),
+      levels = as.vector(outer(
+        c("Water", "Unfermented", "3w Fermented", "Metabolites"),
+        c("CONV", "HFD"),
+        paste, sep = "\n"
+      ))
+    )
+  )
+```
+
+```{r helpers}
+extract_level <- function(df, level = c("species", "genus", "family",
+                                        "order", "class")) {
+  level  <- match.arg(level)
+  prefix <- switch(level,
+                   species = "s__", genus = "g__", family = "f__",
+                   order   = "o__", class  = "c__"
+  )
+  df %>%
+    filter(map_lgl(str_split(clade_name, "\\|"),
+                   ~ str_starts(last(.x), prefix))) %>%
+    mutate(
+      taxon = map_chr(str_split(clade_name, "\\|"), last),
+      taxon = str_remove(taxon, prefix),
+      taxon = str_replace_all(taxon, "_", " ")
+    ) %>%
+    select(-clade_name) %>%
+    column_to_rownames("taxon") %>%
+    t() %>%
+    as.data.frame()
+}
+
+align_metadata <- function(otu_mat, md) {
+  raw_names   <- rownames(otu_mat)
+  clean_names <- str_remove(raw_names, "_L00.*$")
+  idx         <- match(clean_names, md$`Sample ID`)
+  unmatched   <- raw_names[is.na(idx)]
+  if (length(unmatched) > 0) {
+    stop(length(unmatched), " sample(s) failed to match metadata:\n",
+         paste(unmatched, collapse = "\n"))
+  }
+  matched            <- md[idx, ]
+  matched$SampleName <- raw_names
+  matched
+}
+
+load_read_counts <- function(path) {
+  tbl       <- read_tsv(path, show_col_types = FALSE)
+  names(tbl)[1] <- "Sample"
+  base_rows <- tbl %>%
+    filter(!str_detect(Sample,
+                       "_(raw_)?[12]$|_db1\\.metaphlan|_profile$")) %>%
+    select(Sample, reads_after_filtering = `Reads After Filtering`) %>%
+    filter(!is.na(reads_after_filtering) &
+             reads_after_filtering != ".") %>%
+    mutate(reads_after_filtering =
+             round(as.numeric(reads_after_filtering) * 1e6))
+  setNames(base_rows$reads_after_filtering, base_rows$Sample)
+}
+```
+
+```{r taxa-barplot}
+plot_taxa_bar <- function(otu_mat, meta, level,
+                          threshold = collapse_threshold) {
+  otu_pct <- otu_mat / rowSums(otu_mat) * 100
+  
+  df <- otu_pct %>%
+    rownames_to_column("SampleName") %>%
+    left_join(meta %>% select(SampleName, Treatment, Diet, TreatDiet),
+              by = "SampleName") %>%
+    pivot_longer(-c(SampleName, Treatment, Diet, TreatDiet),
+                 names_to = "Taxon", values_to = "Abundance") %>%
+    group_by(TreatDiet, Treatment, Diet, Taxon) %>%
+    summarise(MeanAbundance = mean(Abundance), .groups = "drop")
+  
+  if (!is.null(threshold)) {
+    overall_means <- colMeans(otu_pct)
+    low_taxa      <- names(overall_means[overall_means < threshold * 100])
+    df <- df %>%
+      mutate(Taxon = if_else(Taxon %in% low_taxa, "Low Abundance", Taxon)) %>%
+      group_by(TreatDiet, Treatment, Diet, Taxon) %>%
+      summarise(MeanAbundance = sum(MeanAbundance), .groups = "drop")
+  }
+  
+  taxon_order    <- df %>%
+    group_by(Taxon) %>%
+    summarise(m = mean(MeanAbundance), .groups = "drop") %>%
+    arrange(m) %>% pull(Taxon)
+  low_ab_present <- "Low Abundance" %in% taxon_order
+  taxon_order    <- taxon_order[taxon_order != "Low Abundance"]
+  if (low_ab_present) taxon_order <- c("Low Abundance", taxon_order)
+  df$Taxon       <- factor(df$Taxon, levels = taxon_order)
+  
+  n_real <- length(taxon_order) - as.integer(low_ab_present)
+  pal    <- colorRampPalette(brewer.pal(12, "Paired"))(max(n_real, 1))
+  if (low_ab_present) pal <- c("grey70", pal)
+  names(pal) <- taxon_order
+  
+  ggplot(df, aes(x = TreatDiet, y = MeanAbundance, fill = Taxon)) +
+    geom_bar(stat = "identity", position = "stack",
+             colour = "white", linewidth = 0.15) +
+    scale_fill_manual(values = pal) +
+    labs(
+      title = paste0("Relative Abundance by Treatment x Diet (",
+                     str_to_title(level), ")"),
+      x = NULL, y = "Mean Relative Abundance (%)",
+      fill = str_to_title(level)
+    ) +
+    theme_classic(base_size = 12) +
+    theme(
+      axis.text.x     = element_text(angle = 40, hjust = 1, size = 9),
+      legend.text     = element_text(face = "italic", size = 7),
+      legend.key.size = unit(0.35, "cm"),
+      legend.title    = element_text(size = 9)
+    ) +
+    guides(fill = guide_legend(ncol = 1, reverse = TRUE))
+}
+```
+
+```{r akkermansia-boxplot}
+plot_akkermansia <- function(otu_mat, meta) {
+  akk_col <- grep("^Akkermansia$", colnames(otu_mat), value = TRUE)
+  if (length(akk_col) == 0) {
+    warning("Akkermansia not found in genus-level OTU matrix.")
+    return(invisible(NULL))
+  }
+  
+  otu_pct <- otu_mat / rowSums(otu_mat) * 100
+  
+  df <- data.frame(
+    SampleName  = rownames(otu_pct),
+    Akkermansia = otu_pct[[akk_col]],
+    stringsAsFactors = FALSE
+  ) %>%
+    left_join(meta %>% select(SampleName, Treatment, Diet, TreatDiet),
+              by = "SampleName") %>%
+    filter(Treatment %in% c("Water", "3w Fermented")) %>%
+    mutate(
+      Treatment = factor(Treatment, levels = c("Water", "3w Fermented")),
+      Diet      = factor(Diet,      levels = c("CONV", "HFD"))
+    )
+  
+  wilcox_res <- df %>%
+    group_by(Diet) %>%
+    group_modify(~ {
+      sub   <- .x
+      valid <- sub %>% group_by(Treatment) %>%
+        summarise(n = n(), .groups = "drop") %>% filter(n >= 2)
+      if (nrow(valid) < 2) return(tibble())
+      wt    <- wilcox.test(Akkermansia ~ Treatment,
+                           data = sub, exact = FALSE)
+      n_grp <- sub %>% group_by(Treatment) %>%
+        summarise(n = n(), .groups = "drop")
+      n1 <- n_grp$n[1]; n2 <- n_grp$n[2]
+      W  <- as.numeric(wt$statistic)
+      tibble(group1 = "Water", group2 = "3w Fermented",
+             n1 = n1, n2 = n2, W = W,
+             p.raw = wt$p.value, r = 1 - (2 * W) / (n1 * n2))
+    }) %>%
+    ungroup() %>%
+    mutate(
+      p.adj    = p.adjust(p.raw, method = "BH"),
+      p.signif = case_when(
+        p.adj < 0.001 ~ "***", p.adj < 0.01 ~ "**",
+        p.adj < 0.05  ~ "*",   TRUE          ~ "ns"
+      )
+    )
+  
+  print(wilcox_res)
+  
+  bracket_df <- wilcox_res %>%
+    left_join(
+      df %>% group_by(Diet) %>%
+        summarise(y_max = max(Akkermansia, na.rm = TRUE), .groups = "drop"),
+      by = "Diet"
+    ) %>%
+    mutate(
+      y_br  = y_max * 1.12,
+      label = paste0("p.adj=", signif(p.adj, 2),
+                     " (", p.signif, ")\nr=", round(r, 2))
+    )
+  
+  trt_colors <- c("Water" = "#4393C3", "3w Fermented" = "#D6604D")
+  tip_frac   <- 0.04
+  
+  p <- ggplot(df, aes(x = Treatment, y = Akkermansia,
+                      colour = Treatment, fill = Treatment)) +
+    geom_boxplot(alpha = 0.3, outlier.shape = NA, width = 0.5) +
+    geom_jitter(width = 0.12, size = 3, alpha = 0.85) +
+    scale_colour_manual(values = trt_colors) +
+    scale_fill_manual(values   = trt_colors) +
+    facet_wrap(~ Diet, nrow = 1, scales = "free_y") +
+    labs(
+      title    = "Akkermansia Relative Abundance",
+      subtitle = "Water vs 3w Fermented | Wilcoxon rank-sum | BH-corrected",
+      x = NULL, y = "Relative Abundance within Genus Level (%)"
+    ) +
+    theme_classic(base_size = 13) +
+    theme(
+      axis.text.x      = element_text(angle = 25, hjust = 1),
+      legend.position  = "none",
+      strip.background = element_rect(fill = "grey92", colour = NA),
+      strip.text       = element_text(face = "bold", size = 11)
+    )
+  
+  if (nrow(bracket_df) > 0) {
+    p <- p +
+      geom_segment(data = bracket_df,
+                   aes(x = 1, xend = 2, y = y_br, yend = y_br),
+                   inherit.aes = FALSE, colour = "black",
+                   linewidth = 0.5) +
+      geom_segment(data = bracket_df,
+                   aes(x = 1, xend = 1, y = y_br,
+                       yend = y_br * (1 - tip_frac)),
+                   inherit.aes = FALSE, colour = "black",
+                   linewidth = 0.5) +
+      geom_segment(data = bracket_df,
+                   aes(x = 2, xend = 2, y = y_br,
+                       yend = y_br * (1 - tip_frac)),
+                   inherit.aes = FALSE, colour = "black",
+                   linewidth = 0.5) +
+      geom_text(data = bracket_df,
+                aes(x = 1.5, y = y_br * 1.02, label = label),
+                inherit.aes = FALSE, size = 3, vjust = 0, hjust = 0.5)
+  }
+  p
+}
+```
+
+```{r pcoa}
+plot_pcoa_bray <- function(otu_mat, meta, level) {
+  
+  keep_samples <- meta %>%
+    filter(Treatment %in% c("Water", "3w Fermented")) %>%
+    pull(SampleName)
+  
+  otu_filt  <- otu_mat[keep_samples, ]
+  meta_filt <- meta %>%
+    filter(SampleName %in% keep_samples) %>%
+    mutate(
+      Treatment = factor(Treatment, levels = c("Water", "3w Fermented")),
+      Diet      = factor(Diet,      levels = c("CONV", "HFD")),
+      TreatDiet = factor(
+        paste(Diet, Treatment, sep = " - "),
+        levels = c("CONV - Water", "CONV - 3w Fermented",
+                   "HFD - Water",  "HFD - 3w Fermented")
+      )
+    )
+  
+  meta_ord  <- meta_filt[match(rownames(otu_filt), meta_filt$SampleName), ]
+  dist_bray <- vegdist(otu_filt, method = "bray")
+  
+  set.seed(42)
+  perm_bray <- adonis2(dist_bray ~ Treatment * Diet,
+                       data         = meta_ord,
+                       permutations = 999,
+                       by           = "terms") %>%
+    as.data.frame() %>%
+    rownames_to_column("Term")
+  
+  pcoa    <- cmdscale(dist_bray, k = 2, eig = TRUE)
+  eig     <- pcoa$eig
+  eig_pct <- round(eig / sum(eig[eig > 0]) * 100, 1)
+  
+  pcoa_df <- as.data.frame(pcoa$points) %>%
+    setNames(c("PC1", "PC2")) %>%
+    rownames_to_column("SampleName") %>%
+    left_join(meta_filt %>% select(SampleName, Treatment, Diet, TreatDiet),
+              by = "SampleName")
+  
+  four_colors <- c(
+    "CONV - Water"        = "#AEC6E8",
+    "CONV - 3w Fermented" = "#1F78B4",
+    "HFD - Water"         = "#FDBF6F",
+    "HFD - 3w Fermented"  = "#E31A1C"
+  )
+  
+  get_p <- function(term) {
+    val <- perm_bray %>% filter(Term == term) %>% pull(`Pr(>F)`)
+    if (length(val) == 0 || is.na(val)) return(NA_real_); val
+  }
+  
+  annot_label <- sprintf(
+    "PERMANOVA\nTreatment p=%.3f\nDiet p=%.3f\nTreatment:Diet p=%.3f",
+    get_p("Treatment"), get_p("Diet"), get_p("Treatment:Diet")
+  )
+  
+  ggplot(pcoa_df, aes(x = PC1, y = PC2, fill = TreatDiet)) +
+    geom_point(size = 3, shape = 21, stroke = 0.5, color = "grey30") +
+    stat_ellipse(aes(color = TreatDiet, group = TreatDiet),
+                 type = "t", level = 0.85, linetype = "dashed",
+                 linewidth = 0.6) +
+    annotate("text", x = -Inf, y = Inf, label = annot_label,
+             hjust = -0.1, vjust = 1.3, size = 2.8, color = "grey20") +
+    scale_fill_manual(values  = four_colors, name = NULL) +
+    scale_color_manual(values = four_colors) +
+    labs(
+      title = paste0("PCoA — Bray-Curtis (", str_to_title(level),
+                     ") | PC1 vs PC2"),
+      x = paste0("PC1 (", eig_pct[1], "%)"),
+      y = paste0("PC2 (", eig_pct[2], "%)")
+    ) +
+    theme_classic(base_size = 8) +
+    theme(
+      axis.text   = element_text(color = "black"),
+      axis.line   = element_line(color = "black", linewidth = 0.4),
+      axis.ticks  = element_line(color = "black", linewidth = 0.4),
+      legend.text = element_text(size = 7)
+    ) +
+    guides(fill  = guide_legend(override.aes = list(shape = 21)),
+           color = "none")
+}
+```
+
+```{r ancombc2}
+
+
+# build_phyloseq: full community, used by rescue analysis
+build_phyloseq <- function(otu_mat, meta, diet_filter, level, read_counts) {
+  keep_samples <- meta %>%
+    filter(Diet == diet_filter,
+           Treatment %in% c("Water", "3w Fermented")) %>%
+    pull(SampleName)
+  
+  otu_sub  <- otu_mat[keep_samples, ]
+  meta_sub <- meta %>%
+    filter(SampleName %in% keep_samples) %>%
+    mutate(Treatment = factor(Treatment,
+                              levels = c("Water", "3w Fermented"))) %>%
+    as.data.frame()
+  rownames(meta_sub) <- meta_sub$SampleName
+  
+  base_names <- str_remove(rownames(otu_sub), "_db1\\.metaphlan.*$")
+  missing    <- base_names[!base_names %in% names(read_counts)]
+  if (length(missing) > 0) {
+    stop(length(missing), " sample(s) have no matching read count:\n",
+         paste(missing, collapse = "\n"))
+  }
+  
+  count_mat <- round(sweep(otu_sub / 100, 1,
+                           read_counts[base_names], "*"))
+  phyloseq(
+    otu_table(t(count_mat), taxa_are_rows = TRUE),
+    sample_data(meta_sub)
+  )
+}
+
+# build_phyloseq_highAbund: filters to mean >= HIGH_ABUND_THRESH before
+# building phyloseq — used for volcano plot only
+build_phyloseq_highAbund <- function(otu_mat, meta, diet_filter,
+                                     level, read_counts) {
+  keep_samples <- meta %>%
+    filter(Diet == diet_filter,
+           Treatment %in% c("Water", "3w Fermented")) %>%
+    pull(SampleName)
+  
+  otu_sub  <- otu_mat[keep_samples, ]
+  meta_sub <- meta %>%
+    filter(SampleName %in% keep_samples) %>%
+    mutate(Treatment = factor(Treatment,
+                              levels = c("Water", "3w Fermented"))) %>%
+    as.data.frame()
+  rownames(meta_sub) <- meta_sub$SampleName
+  
+  # Filter to taxa with mean relative abundance >= HIGH_ABUND_THRESH
+  col_means  <- colMeans(otu_sub)
+  keep_taxa  <- names(col_means[col_means >= HIGH_ABUND_THRESH])
+  
+  cat("  High-abundance filter (", diet_filter, "):",
+      ncol(otu_sub), "→", length(keep_taxa), "taxa retained",
+      "(mean >=", HIGH_ABUND_THRESH, "%)\n")
+  
+  if (length(keep_taxa) < 2) {
+    warning("Fewer than 2 taxa passed filter for ", diet_filter)
+    return(NULL)
+  }
+  
+  otu_sub    <- otu_sub[, keep_taxa, drop = FALSE]
+  base_names <- str_remove(rownames(otu_sub), "_db1\\.metaphlan.*$")
+  missing    <- base_names[!base_names %in% names(read_counts)]
+  if (length(missing) > 0) {
+    stop(length(missing), " sample(s) have no matching read count:\n",
+         paste(missing, collapse = "\n"))
+  }
+  
+  count_mat <- round(sweep(otu_sub / 100, 1,
+                           read_counts[base_names], "*"))
+  phyloseq(
+    otu_table(t(count_mat), taxa_are_rows = TRUE),
+    sample_data(meta_sub)
+  )
+}
+
+run_ancombc2 <- function(ps, level, diet_label) {
+  res <- tryCatch(
+    ancombc2(data = ps, assay_name = "counts",
+             fix_formula = "Treatment", p_adj_method = "BH"),
+    error = function(e) { warning(e$message); NULL }
+  )
+  if (is.null(res)) return(NULL)
+  
+  taxon_col <- names(res$res)[1]
+  
+  res$res %>%
+    as_tibble() %>%
+    dplyr::rename(taxon = all_of(taxon_col)) %>%
+    mutate(
+      Diet        = diet_label,
+      Level       = level,
+      log2FC      = `lfc_Treatment3w Fermented` / log(2),
+      p.raw       = `p_Treatment3w Fermented`,
+      p.adj       = `q_Treatment3w Fermented`,
+      significant = `diff_Treatment3w Fermented` == TRUE
+    ) %>%
+    select(Level, Diet, taxon, log2FC, p.raw, p.adj, significant,
+           any_of("passed_ss_Treatment3w Fermented")) %>%
+    arrange(p.adj)
+}
+
+plot_volcano <- function(results_list, level, filtered = FALSE) {
+  plot_list <- list()
+  
+  for (diet in c("CONV", "HFD")) {
+    df <- results_list[[diet]]
+    if (is.null(df) || nrow(df) == 0) next
+    
+    df <- df %>%
+      mutate(
+        p.adj      = replace_na(p.adj, 1),
+        log2FC     = replace_na(log2FC, 0),
+        neg_log10p = -log10(p.adj + 1e-300),
+        sig_label  = if_else(significant & !is.na(significant),
+                             taxon, NA_character_),
+        point_col  = if_else(significant & !is.na(significant),
+                             "Significant", "Not significant")
+      )
+    
+    subtitle_str <- paste0(
+      sum(df$significant, na.rm = TRUE),
+      " significant taxa (BH-adjusted p < 0.05)",
+      if (filtered) paste0(" | taxa with mean >= ",
+                           HIGH_ABUND_THRESH, "% only") else ""
+    )
+    
+    p <- ggplot(df, aes(x = log2FC, y = neg_log10p,
+                        colour = point_col, label = sig_label)) +
+      geom_point(alpha = 0.7, size = 2) +
+      geom_text_repel(size = 2.8, fontface = "italic",
+                      max.overlaps = 20, box.padding = 0.3,
+                      show.legend = FALSE, na.rm = TRUE) +
+      geom_hline(yintercept = -log10(0.05),
+                 linetype = "dashed", colour = "grey50",
+                 linewidth = 0.4) +
+      geom_vline(xintercept = 0,
+                 linetype = "solid", colour = "grey70",
+                 linewidth = 0.3) +
+      scale_colour_manual(
+        values = c("Significant" = "#D6604D",
+                   "Not significant" = "grey60"),
+        name   = NULL
+      ) +
+      labs(
+        title    = diet,
+        subtitle = subtitle_str,
+        x = "Log2 Fold Change (3w Fermented vs Water)",
+        y = "-log10(adjusted p-value)"
+      ) +
+      theme_classic(base_size = 12) +
+      theme(legend.position = "bottom",
+            plot.title      = element_text(face = "bold"),
+            plot.subtitle   = element_text(size = 9, colour = "grey40"))
+    
+    plot_list[[diet]] <- p
+  }
+  
+  if (length(plot_list) == 0) return(NULL)
+  if (length(plot_list) == 1) return(plot_list[[1]])
+  
+  wrap_plots(plot_list, ncol = 2) +
+    plot_annotation(
+      title    = paste0("ANCOM-BC2 — ", str_to_title(level)),
+      subtitle = "3w Fermented vs Water | BH-adjusted | Labeled = significant",
+      theme    = theme(
+        plot.title    = element_text(face = "bold", size = 13),
+        plot.subtitle = element_text(size = 9, colour = "grey40")
+      )
+    )
+}
+
+# run_ancombc2_volcano: high-abundance filtered — for volcano plot only
+run_ancombc2_volcano <- function(level = "species") {
+  cat("\n--- ANCOM-BC2 (mean >=", HIGH_ABUND_THRESH,
+      "% filter) ---\n")
+  
+  read_counts <- load_read_counts(
+    "general_stats_table.tsv"
+  )
+  
+  otu_mat <- extract_level(mph, level)
+  meta    <- align_metadata(otu_mat, md)
+  keep    <- rowSums(otu_mat) > 0
+  otu_mat <- otu_mat[keep, ]; meta <- meta[keep, ]
+  
+  all_results <- list()
+  
+  for (diet in c("CONV", "HFD")) {
+    ps <- tryCatch(
+      build_phyloseq_highAbund(otu_mat, meta, diet, level, read_counts),
+      error = function(e) { warning(e$message); NULL }
+    )
+    if (is.null(ps)) next
+    res <- run_ancombc2(ps, level, diet)
+    if (!is.null(res)) all_results[[diet]] <- res
+  }
+  
+  combined <- bind_rows(all_results)
+  
+  write.csv(combined,
+            file.path(out_dir,
+                      paste0(level, "_ancombc2_highAbund_results.csv")),
+            row.names = FALSE)
+  
+  p_vol <- plot_volcano(all_results, level, filtered = TRUE)
+  if (!is.null(p_vol)) {
+    print(p_vol)
+    ggsave(file.path(out_dir,
+                     paste0(level, "_volcano_ancombc2_highAbund.pdf")),
+           p_vol, width = 12, height = 6)
+    ggsave(file.path(out_dir,
+                     paste0(level, "_volcano_ancombc2_highAbund.svg")),
+           p_vol, width = 12, height = 6)
+  }
+  
+  invisible(combined)
+}
+
+# run_ancombc2_full: full community — for rescue analysis only
+run_ancombc2_full <- function(level = "species") {
+  cat("\n--- ANCOM-BC2 (full community) ---\n")
+  
+  read_counts <- load_read_counts(
+    "general_stats_table.tsv"
+  )
+  
+  otu_mat <- extract_level(mph, level)
+  meta    <- align_metadata(otu_mat, md)
+  keep    <- rowSums(otu_mat) > 0
+  otu_mat <- otu_mat[keep, ]; meta <- meta[keep, ]
+  
+  all_results <- list()
+  
+  for (diet in c("CONV", "HFD")) {
+    ps <- tryCatch(
+      build_phyloseq(otu_mat, meta, diet, level, read_counts),
+      error = function(e) { warning(e$message); NULL }
+    )
+    if (is.null(ps)) next
+    res <- run_ancombc2(ps, level, diet)
+    if (!is.null(res)) all_results[[diet]] <- res
+  }
+  
+  combined <- bind_rows(all_results)
+  
+  write.csv(combined,
+            file.path(out_dir,
+                      paste0(level, "_ancombc2_full_results.csv")),
+            row.names = FALSE)
+  
+  invisible(combined)
+}
+```
+
+```{r rescue}
+build_phyloseq_dysbiosis <- function(otu_mat, meta, level, read_counts) {
+  keep_samples <- meta %>%
+    filter(Treatment == "Water") %>% pull(SampleName)
+  
+  if (length(keep_samples) < 4) {
+    warning("Fewer than 4 Water samples at ", level); return(NULL)
+  }
+  
+  otu_sub  <- otu_mat[keep_samples, , drop = FALSE]
+  meta_sub <- meta %>%
+    filter(SampleName %in% keep_samples) %>%
+    mutate(Diet = factor(Diet, levels = c("CONV", "HFD"))) %>%
+    as.data.frame()
+  rownames(meta_sub) <- meta_sub$SampleName
+  
+  base_names <- str_remove(rownames(otu_sub), "_db1\\.metaphlan.*$")
+  missing    <- base_names[!base_names %in% names(read_counts)]
+  if (length(missing) > 0) {
+    stop(length(missing), " sample(s) missing from read counts:\n",
+         paste(missing, collapse = "\n"))
+  }
+  
+  count_mat <- round(sweep(otu_sub / 100, 1,
+                           read_counts[base_names], "*"))
+  phyloseq(
+    otu_table(t(count_mat), taxa_are_rows = TRUE),
+    sample_data(meta_sub)
+  )
+}
+
+run_ancombc2_dysbiosis <- function(ps, level) {
+  res <- tryCatch(
+    ancombc2(data = ps, assay_name = "counts",
+             fix_formula = "Diet", p_adj_method = "BH"),
+    error = function(e) { warning(e$message); NULL }
+  )
+  if (is.null(res)) return(NULL)
+  
+  taxon_col <- names(res$res)[1]
+  
+  res$res %>%
+    as_tibble() %>%
+    dplyr::rename(taxon = all_of(taxon_col)) %>%
+    mutate(
+      Level            = level,
+      log2FC_dysbiosis = lfc_DietHFD / log(2),
+      p.raw_dysbiosis  = p_DietHFD,
+      p.adj_dysbiosis  = q_DietHFD,
+      sig_dysbiosis    = diff_DietHFD == TRUE
+    ) %>%
+    select(Level, taxon, log2FC_dysbiosis,
+           p.raw_dysbiosis, p.adj_dysbiosis, sig_dysbiosis)
+}
+
+run_dysbiosis_analysis <- function(level = "species") {
+  read_counts <- load_read_counts(
+    "general_stats_table.tsv"
+  )
+  
+  otu_mat <- extract_level(mph, level)
+  meta    <- align_metadata(otu_mat, md)
+  keep    <- rowSums(otu_mat) > 0
+  otu_mat <- otu_mat[keep, ]; meta <- meta[keep, ]
+  
+  ps <- tryCatch(
+    build_phyloseq_dysbiosis(otu_mat, meta, level, read_counts),
+    error = function(e) { warning(e$message); NULL }
+  )
+  if (is.null(ps)) return(NULL)
+  
+  res <- run_ancombc2_dysbiosis(ps, level)
+  
+  write.csv(res,
+            file.path(out_dir,
+                      paste0(level, "_dysbiosis_ancombc2.csv")),
+            row.names = FALSE)
+  invisible(res)
+}
+
+plot_rescue_correlation <- function(dysbiosis_results,
+                                    rescue_results,
+                                    level = "species") {
+  rescue_hfd <- rescue_results %>%
+    filter(Diet == "HFD") %>%
+    select(Level, taxon,
+           log2FC_rescue = log2FC,
+           p.adj_rescue  = p.adj,
+           sig_rescue    = significant) %>%
+    mutate(sig_rescue    = replace_na(sig_rescue,    FALSE),
+           log2FC_rescue = replace_na(log2FC_rescue, 0))
+  
+  combined <- dysbiosis_results %>%
+    inner_join(rescue_hfd, by = c("Level", "taxon")) %>%
+    filter(!is.na(log2FC_dysbiosis), !is.na(log2FC_rescue)) %>%
+    mutate(
+      quadrant = case_when(
+        log2FC_dysbiosis < 0 & log2FC_rescue > 0 ~
+          "True rescue (depleted → restored)",
+        log2FC_dysbiosis > 0 & log2FC_rescue < 0 ~
+          "True rescue (enriched → reduced)",
+        log2FC_dysbiosis < 0 & log2FC_rescue < 0 ~
+          "Compounding (depleted further)",
+        log2FC_dysbiosis > 0 & log2FC_rescue > 0 ~
+          "Compounding (enriched further)",
+        TRUE ~ "No change"
+      ),
+      quadrant = factor(quadrant, levels = c(
+        "True rescue (depleted → restored)",
+        "True rescue (enriched → reduced)",
+        "Compounding (depleted further)",
+        "Compounding (enriched further)",
+        "No change"
+      ))
+    )
+  
+  write.csv(combined,
+            file.path(out_dir, "rescue_correlation_data.csv"),
+            row.names = FALSE)
+  
+  quadrant_colors <- c(
+    "True rescue (depleted → restored)" = "#4393C3",
+    "True rescue (enriched → reduced)"  = "#4DAC26",
+    "Compounding (depleted further)"    = "#B2182B",
+    "Compounding (enriched further)"    = "#F4A582",
+    "No change"                          = "grey80"
+  )
+  
+  cor_test  <- cor.test(combined$log2FC_dysbiosis,
+                        combined$log2FC_rescue,
+                        method = "spearman", exact = FALSE)
+  cor_label <- sprintf("Spearman ρ = %.2f\np = %s",
+                       cor_test$estimate,
+                       ifelse(cor_test$p.value < 0.001,
+                              formatC(cor_test$p.value,
+                                      format = "e", digits = 2),
+                              sprintf("%.3f", cor_test$p.value)))
+  
+  lm_fit   <- lm(log2FC_rescue ~ log2FC_dysbiosis, data = combined)
+  lm_slope <- round(coef(lm_fit)[2], 2)
+  lm_label <- sprintf("OLS slope = %.2f\n(perfect rescue = -1.00)",
+                      lm_slope)
+  
+  ax_lim <- max(abs(c(combined$log2FC_dysbiosis,
+                      combined$log2FC_rescue)),
+                na.rm = TRUE) * 1.15
+  
+  akk_df <- combined %>%
+    filter(str_detect(taxon, regex("muciniphila", ignore_case = TRUE)))
+  
+  p <- ggplot(combined, aes(x = log2FC_dysbiosis, y = log2FC_rescue)) +
+    annotate("rect", xmin = -Inf, xmax = 0,   ymin = 0,    ymax = Inf,
+             fill = "#4393C3", alpha = 0.04) +
+    annotate("rect", xmin = 0,    xmax = Inf, ymin = -Inf, ymax = 0,
+             fill = "#4DAC26", alpha = 0.04) +
+    annotate("rect", xmin = -Inf, xmax = 0,   ymin = -Inf, ymax = 0,
+             fill = "#B2182B", alpha = 0.04) +
+    annotate("rect", xmin = 0,    xmax = Inf, ymin = 0,    ymax = Inf,
+             fill = "#F4A582", alpha = 0.04) +
+    geom_hline(yintercept = 0, colour = "grey50", linewidth = 0.35) +
+    geom_vline(xintercept = 0, colour = "grey50", linewidth = 0.35) +
+    geom_abline(slope = -1, intercept = 0, colour = "black",
+                linewidth = 0.7, linetype = "dashed") +
+    geom_smooth(method = "lm", formula = y ~ x, colour = "grey40",
+                linewidth = 0.6, linetype = "dashed",
+                se = TRUE, alpha = 0.12) +
+    geom_point(aes(fill = quadrant), shape = 21, size = 2.5,
+               stroke = 0.35, color = "grey25", alpha = 0.88) +
+    geom_point(data = akk_df, aes(fill = quadrant),
+               shape = 21, stroke = 1.5, size = 4,
+               color = "black", alpha = 1) +
+    geom_text_repel(data = akk_df, aes(label = taxon),
+                    size = 3, fontface = "italic", color = "black",
+                    box.padding = 0.5, segment.size = 0.4,
+                    show.legend = FALSE) +
+    scale_fill_manual(values = quadrant_colors,
+                      name = NULL, drop = FALSE) +
+    annotate("text", x = Inf,  y = Inf,  label = cor_label,
+             hjust = 1.08, vjust = 2.5,  size = 3, colour = "grey20") +
+    annotate("text", x = Inf,  y = -Inf, label = lm_label,
+             hjust = 1.08, vjust = -0.5, size = 3, colour = "grey40") +
+    annotate("text", x = -ax_lim * 0.97, y =  ax_lim * 0.97,
+             label = "Rescued\n(HFD-depleted → restored)",
+             size = 2.4, colour = "#2166AC",
+             hjust = 0, vjust = 1, fontface = "bold") +
+    annotate("text", x =  ax_lim * 0.97, y = -ax_lim * 0.97,
+             label = "Rescued\n(HFD-enriched → reduced)",
+             size = 2.4, colour = "#1A7416",
+             hjust = 1, vjust = 0, fontface = "bold") +
+    annotate("text", x = -ax_lim * 0.97, y = -ax_lim * 0.97,
+             label = "SK makes worse\n(HFD-depleted → further depleted)",
+             size = 2.4, colour = "#B2182B",
+             hjust = 0, vjust = 0, fontface = "bold") +
+    annotate("text", x =  ax_lim * 0.97, y =  ax_lim * 0.97,
+             label = "SK makes worse\n(HFD-enriched → further enriched)",
+             size = 2.4, colour = "#B35806",
+             hjust = 1, vjust = 1, fontface = "bold") +
+    coord_fixed(ratio = 1,
+                xlim  = c(-ax_lim, ax_lim),
+                ylim  = c(-ax_lim, ax_lim)) +
+    labs(
+      title    = paste0("HFD Dysbiosis vs Sauerkraut Rescue — ",
+                        str_to_title(level)),
+      subtitle = paste0(
+        "x = dysbiosis score (Log2FC HFD-Water vs CONV-Water)  |  ",
+        "y = sauerkraut effect in HFD (Log2FC 3w-Ferm vs Water)\n",
+        "Black dashed line = perfect rescue (y = -x)  |  ",
+        "Grey dashed line = observed OLS trend"
+      ),
+      x = "Dysbiosis score\n← lower in HFD  |  higher in HFD →",
+      y = "Sauerkraut effect in HFD\n← decreased  |  increased →"
+    ) +
+    theme_classic(base_size = 11) +
+    theme(
+      legend.position = "bottom",
+      legend.text     = element_text(size = 8),
+      legend.box      = "vertical",
+      plot.subtitle   = element_text(size = 7.5, colour = "grey40"),
+      plot.title      = element_text(face = "bold"),
+      axis.title.x    = element_text(size = 9),
+      axis.title.y    = element_text(size = 9)
+    ) +
+    guides(fill = guide_legend(
+      override.aes = list(shape = 21, size = 3.5), nrow = 2
+    ))
+  
+  print(p)
+  ggsave(file.path(out_dir,
+                   paste0(level, "_rescue_correlation.pdf")),
+         p, width = 8, height = 8)
+  ggsave(file.path(out_dir,
+                   paste0(level, "_rescue_correlation.svg")),
+         p, width = 8, height = 8)
+  
+  invisible(p)
+}
+```
+
+```{r run}
+# Shared OTU matrices
+otu_sp  <- extract_level(mph, "species")
+meta_sp <- align_metadata(otu_sp, md)
+keep_sp <- rowSums(otu_sp) > 0
+otu_sp  <- otu_sp[keep_sp, ]
+meta_sp <- meta_sp[keep_sp, ]
+
+otu_g  <- extract_level(mph, "genus")
+meta_g <- align_metadata(otu_g, md)
+keep_g <- rowSums(otu_g) > 0
+otu_g  <- otu_g[keep_g, ]
+meta_g <- meta_g[keep_g, ]
+
+# 1. Taxa barplot
+p_bar <- plot_taxa_bar(otu_sp, meta_sp, "species")
+print(p_bar)
+ggsave(file.path(out_dir, "species_barplot.pdf"), p_bar,
+       width = 12, height = 7)
+
+# 2. Akkermansia boxplot
+p_akk <- plot_akkermansia(otu_g, meta_g)
+if (!is.null(p_akk)) {
+  print(p_akk)
+  ggsave(file.path(out_dir, "genus_akkermansia_boxplot.pdf"), p_akk,
+         width = 7, height = 5)
+}
+
+# 3. Bray-Curtis PCoA
+p_pcoa <- plot_pcoa_bray(otu_sp, meta_sp, "species")
+print(p_pcoa)
+ggsave(file.path(out_dir, "species_pcoa_bray.pdf"),  p_pcoa,
+       width = 6, height = 5)
+ggsave(file.path(out_dir, "species_pcoa_bray.svg"),  p_pcoa,
+       width = 6, height = 5)
+
+# 4. ANCOM-BC2 volcano (high-abundance filtered: mean >= 1%)
+ancom_volcano <- run_ancombc2_volcano("species")
+
+# 5. Rescue correlation (full community ANCOM-BC2)
+ancom_full        <- run_ancombc2_full("species")
+dysbiosis_results <- run_dysbiosis_analysis("species")
+rescue_plot       <- plot_rescue_correlation(dysbiosis_results,
+                                             ancom_full,
+                                             "species")
+
+cat("\nAll outputs saved to:", out_dir, "\n")
+```
